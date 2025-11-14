@@ -39,3 +39,5 @@ The core of the project is a central "driver-receive" loop that processes interr
 * `Real-Time Clock (RTC)`: Configured to send **update interrupts**. The handler (`rtc_action`) reads the current hour, minute, and second registers to check if the `dark_mode` flag should be enabled
 
 ## Demo
+
+https://github.com/user-attachments/assets/0e67eee1-7b6b-438e-9a7c-59d77037c99f
