@@ -1,0 +1,119 @@
+\doxysection{video.\+c File Reference}
+\hypertarget{video_8c}{}\label{video_8c}\index{video.c@{video.c}}
+{\ttfamily \#include "{}video.\+h"{}}\newline
+Include dependency graph for video.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{video_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{video_8c_afb4146df5590405404a911e802644f82}{set\+\_\+vbe\+\_\+mode}} (uint16\+\_\+t mode)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{video_8c_acc11b311c479b1904fd45e8c6da5fcc3}{vg\+\_\+init}} (uint16\+\_\+t mode)
+\item 
+int \mbox{\hyperlink{video_8c_a6f895de9725f9f231f9a7f74b6087f60}{vg\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\item 
+void \mbox{\hyperlink{video_8c_a2a0c69b89825701f2522df99d7eb3312}{vg\+\_\+fill}} (uint32\+\_\+t color)
+\item 
+void \mbox{\hyperlink{video_8c_ac6c4fe7cd0ff5d5340aa5583f3a427a1}{vg\+\_\+double\+\_\+buffering}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{video_8c_a26081be7a771e5c611b33f15caaf831e}{vmi\+\_\+p}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{video_8c_afb4146df5590405404a911e802644f82}\index{video.c@{video.c}!set\_vbe\_mode@{set\_vbe\_mode}}
+\index{set\_vbe\_mode@{set\_vbe\_mode}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{set\_vbe\_mode()}{set\_vbe\_mode()}}
+{\footnotesize\ttfamily \label{video_8c_afb4146df5590405404a911e802644f82} 
+int set\+\_\+vbe\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video_8c_afb4146df5590405404a911e802644f82_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{video_8c_ac6c4fe7cd0ff5d5340aa5583f3a427a1}\index{video.c@{video.c}!vg\_double\_buffering@{vg\_double\_buffering}}
+\index{vg\_double\_buffering@{vg\_double\_buffering}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{vg\_double\_buffering()}{vg\_double\_buffering()}}
+{\footnotesize\ttfamily \label{video_8c_ac6c4fe7cd0ff5d5340aa5583f3a427a1} 
+void vg\+\_\+double\+\_\+buffering (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video_8c_ac6c4fe7cd0ff5d5340aa5583f3a427a1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{video_8c_a6f895de9725f9f231f9a7f74b6087f60}\index{video.c@{video.c}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily \label{video_8c_a6f895de9725f9f231f9a7f74b6087f60} 
+int vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint32\+\_\+t}]{color}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video_8c_a6f895de9725f9f231f9a7f74b6087f60_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{video_8c_a2a0c69b89825701f2522df99d7eb3312}\index{video.c@{video.c}!vg\_fill@{vg\_fill}}
+\index{vg\_fill@{vg\_fill}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{vg\_fill()}{vg\_fill()}}
+{\footnotesize\ttfamily \label{video_8c_a2a0c69b89825701f2522df99d7eb3312} 
+void vg\+\_\+fill (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{color}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{video_8c_a2a0c69b89825701f2522df99d7eb3312_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video_8c_a2a0c69b89825701f2522df99d7eb3312_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{video_8c_acc11b311c479b1904fd45e8c6da5fcc3}\index{video.c@{video.c}!vg\_init@{vg\_init}}
+\index{vg\_init@{vg\_init}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{vg\_init()}{vg\_init()}}
+{\footnotesize\ttfamily \label{video_8c_acc11b311c479b1904fd45e8c6da5fcc3} 
+void \texorpdfstring{$\ast$}{*} vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{video_8c_acc11b311c479b1904fd45e8c6da5fcc3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{video_8c_acc11b311c479b1904fd45e8c6da5fcc3_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{video_8c_a26081be7a771e5c611b33f15caaf831e}\index{video.c@{video.c}!vmi\_p@{vmi\_p}}
+\index{vmi\_p@{vmi\_p}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{vmi\_p}{vmi\_p}}
+{\footnotesize\ttfamily \label{video_8c_a26081be7a771e5c611b33f15caaf831e} 
+vbe\+\_\+mode\+\_\+info\+\_\+t vmi\+\_\+p}
+

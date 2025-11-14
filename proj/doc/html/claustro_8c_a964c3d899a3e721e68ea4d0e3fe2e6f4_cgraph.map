@@ -1,0 +1,29 @@
+<map id="update_state_machine" name="update_state_machine">
+<area shape="rect" id="Node000001" title="Atualiza o estado do jogo de acordo com os eventos do rato/teclado." alt="" coords="5,203,158,228"/>
+<area shape="rect" id="Node000002" href="$claustro_8c.html#af55820e3bb93fd80447fa8d0d93ebdc3" title="Verifica se a peça em (x,y) pertence ao jogador atual." alt="" coords="237,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,201,103,169,128,126,162,80,204,40,221,30,224,34,207,44,166,84,133,129,107,171,91,203"/>
+<area shape="rect" id="Node000003" href="$claustro_8c.html#ad298944b3db0ec284b74bd35a59280aa" title="Verifica se o botão PLAY foi clicado pelo rato." alt="" coords="206,55,342,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,201,136,148,168,117,204,89,212,85,215,89,207,94,172,121,140,151,95,204"/>
+<area shape="rect" id="Node000004" href="$claustro_8c.html#a2ce96491758e5ff45076c803ef28a42d" title="Verifica se o botão QUIT foi clicado pelo rato." alt="" coords="207,104,341,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="101,200,147,170,204,138,216,133,218,138,207,143,150,175,104,204"/>
+<area shape="rect" id="Node000005" href="$claustro_8c.html#ae1a2e26afd9fddd52abd9795800fbfab" title="Avalia um tabuleiro e verifica se há um vencedor." alt="" coords="231,153,317,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="134,199,216,178,217,183,135,205"/>
+<area shape="rect" id="Node000008" href="$claustro_8c.html#a2748d2f3776b396f0b5e9c2fa1ea052f" title="Valida e executa uma jogada, movendo a peça de (xi, yi) para (xf, yf)." alt="" coords="247,203,301,228"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="158,213,231,213,231,218,158,218"/>
+<area shape="rect" id="Node000010" href="$claustro_8c.html#a837afae612ab07499500b4c2b3a034f1" title="Coloca a peça capturada no tabuleiro em (x,y), verificando se essa posição está EMPTY." alt="" coords="230,252,318,278"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="135,226,216,247,215,253,134,232"/>
+<area shape="rect" id="Node000011" href="$claustro_8c.html#a6f31a24fe416c9ce9259ce11ea23a1f1" title="Imprime o jogador atual e o tabuleiro na consola." alt="" coords="231,301,317,327"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="104,227,150,256,207,288,218,293,216,298,204,293,147,261,101,231"/>
+<area shape="rect" id="Node000012" href="$claustro_8c.html#adcd74acd09c60f59b71f5f8e077fe44b" title="Inicializa a matriz board (representação interna do tabuleiro) com os valores que reprensentam o disp..." alt="" coords="228,351,320,376"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="95,227,140,280,172,310,207,337,215,342,212,346,204,342,168,314,136,283,91,230"/>
+<area shape="rect" id="Node000013" href="$claustro_8c.html#ac5342c02dc0b6fb2730106f6466be324" title="Troca os jogadores." alt="" coords="227,400,321,426"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="91,228,107,260,133,302,166,347,207,387,214,391,211,396,204,391,162,351,128,305,103,262,86,230"/>
+<area shape="rect" id="Node000006" href="$claustro_8c.html#aee833f0e330755c1d7010841d8118b50" title="Verifica se o jogador passado como argumento tem pelo menos uma jogada válida." alt="" coords="390,152,477,178"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="317,163,374,163,375,168,317,168"/>
+<area shape="rect" id="Node000007" href="$claustro_8c.html#acf9287683f8b2181ed6d35bb57733c79" title="Valida uma jogada de acordo com as regras do Claustro." alt="" coords="525,177,607,203"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="478,171,511,177,510,182,477,176"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="301,211,510,192,510,198,301,216"/>
+<area shape="rect" id="Node000009" href="$claustro_8c.html#a80def28072b711eccc7a4c06dd83eb75" title="Coloca/retira uma peça do tabuleiro em (x,y)." alt="" coords="395,253,472,279"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="302,221,381,247,379,252,300,226"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="318,263,380,263,380,268,318,268"/>
+</map>

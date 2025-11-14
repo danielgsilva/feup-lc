@@ -1,0 +1,12 @@
+<map id="swap_player" name="swap_player">
+<area shape="rect" id="Node000001" title="Troca os jogadores." alt="" coords="512,31,607,56"/>
+<area shape="rect" id="Node000002" href="$claustro_8c.html#a964c3d899a3e721e68ea4d0e3fe2e6f4" title="Atualiza o estado do jogo de acordo com os eventos do rato/teclado." alt="" coords="312,31,464,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="497,46,465,46,465,41,497,41"/>
+<area shape="rect" id="Node000003" href="$action_8c.html#a26b41b1ded0c592455ceeb42de056ad5" title="Processa uma interrupção do teclado chamando o seu interrupt handler e tratando a informação de acord..." alt="" coords="171,5,255,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="296,33,255,27,256,22,297,28"/>
+<area shape="rect" id="Node000005" href="$action_8c.html#a3b0ffaa27ccf48f017aeeaebeda02eba" title="Processa uma interrupção do rato chamando o seu interrupt handler e tratando a informação de acordo c..." alt="" coords="162,55,264,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="297,59,265,63,264,58,296,53"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#af244d65e69677cf312af1950452ec256" title=" " alt="" coords="5,31,114,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="156,30,114,37,113,32,155,25"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="146,60,113,55,114,49,147,54"/>
+</map>

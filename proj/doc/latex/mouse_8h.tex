@@ -1,0 +1,133 @@
+\doxysection{mouse.\+h File Reference}
+\hypertarget{mouse_8h}{}\label{mouse_8h}\index{mouse.h@{mouse.h}}
+{\ttfamily \#include "{}i8042.\+h"{}}\newline
+{\ttfamily \#include "{}kbc.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_mouse_state}{Mouse\+State}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mouse_8h_a9da18257ff113b686bb826d154bfaa87}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\item 
+int \mbox{\hyperlink{mouse_8h_a685ad2706aca36d9869a30a19b9f446a}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\item 
+void \mbox{\hyperlink{mouse_8h_ad739c347ab2e83a94360dbe253e286b2}{mouse\+\_\+ih}} (void)
+\item 
+void \mbox{\hyperlink{mouse_8h_a52a44799a27991df167f70e0492551dd}{mouse\+\_\+parse\+\_\+packet}} (struct packet \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{action_8c_a26e83eca70c2b9169fbbb0eac7e32e32}{pp}})
+\item 
+int \mbox{\hyperlink{mouse_8h_af07f0fbfa918e227e2f54d8d626dbc62}{mouse\+\_\+data\+\_\+reporting}} (bool enable)
+\begin{DoxyCompactList}\small\item\em Enables/disables stream mode data reporting, by sending the respective command to the mouse. This function is NOT provided by the LCF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mouse_8h_af07f0fbfa918e227e2f54d8d626dbc62}\index{mouse.h@{mouse.h}!mouse\_data\_reporting@{mouse\_data\_reporting}}
+\index{mouse\_data\_reporting@{mouse\_data\_reporting}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_data\_reporting()}{mouse\_data\_reporting()}}
+{\footnotesize\ttfamily \label{mouse_8h_af07f0fbfa918e227e2f54d8d626dbc62} 
+int mouse\+\_\+data\+\_\+reporting (\begin{DoxyParamCaption}\item[{bool}]{enable}{}\end{DoxyParamCaption})}
+
+
+
+Enables/disables stream mode data reporting, by sending the respective command to the mouse. This function is NOT provided by the LCF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & If true enable, otherwise disable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns O on success, and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_af07f0fbfa918e227e2f54d8d626dbc62_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{mouse_8h_af07f0fbfa918e227e2f54d8d626dbc62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_ad739c347ab2e83a94360dbe253e286b2}\index{mouse.h@{mouse.h}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily \label{mouse_8h_ad739c347ab2e83a94360dbe253e286b2} 
+void mouse\+\_\+ih (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_ad739c347ab2e83a94360dbe253e286b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_ad739c347ab2e83a94360dbe253e286b2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_a52a44799a27991df167f70e0492551dd}\index{mouse.h@{mouse.h}!mouse\_parse\_packet@{mouse\_parse\_packet}}
+\index{mouse\_parse\_packet@{mouse\_parse\_packet}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_parse\_packet()}{mouse\_parse\_packet()}}
+{\footnotesize\ttfamily \label{mouse_8h_a52a44799a27991df167f70e0492551dd} 
+void mouse\+\_\+parse\+\_\+packet (\begin{DoxyParamCaption}\item[{struct packet \texorpdfstring{$\ast$}{*}}]{pp}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a52a44799a27991df167f70e0492551dd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_a9da18257ff113b686bb826d154bfaa87}\index{mouse.h@{mouse.h}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily \label{mouse_8h_a9da18257ff113b686bb826d154bfaa87} 
+int mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{mouse_8h_a9da18257ff113b686bb826d154bfaa87_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_8h_a685ad2706aca36d9869a30a19b9f446a}\index{mouse.h@{mouse.h}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \label{mouse_8h_a685ad2706aca36d9869a30a19b9f446a} 
+int mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{mouse_8h_a685ad2706aca36d9869a30a19b9f446a_icgraph}
+\end{center}
+\end{figure}

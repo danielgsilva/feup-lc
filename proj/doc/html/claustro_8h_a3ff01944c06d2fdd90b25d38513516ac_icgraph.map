@@ -1,0 +1,13 @@
+<map id="draw_game_over_menu" name="draw_game_over_menu">
+<area shape="rect" id="Node000001" title="Desenha o menu final, incluido os botões PLAY e QUIT." alt="" coords="449,56,609,82"/>
+<area shape="rect" id="Node000002" href="$claustro_8c.html#a8f7acda4de2ff9ede5fca68d2db09959" title="Desenha uma frame de acordo com o estado do jogo." alt="" coords="312,56,401,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,72,402,72,402,66,434,66"/>
+<area shape="rect" id="Node000003" href="$action_8c.html#a26b41b1ded0c592455ceeb42de056ad5" title="Processa uma interrupção do teclado chamando o seu interrupt handler e tratando a informação de acord..." alt="" coords="171,5,255,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,53,250,34,252,29,305,48"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#af244d65e69677cf312af1950452ec256" title=" " alt="" coords="5,56,114,82"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="297,72,114,72,114,66,297,66"/>
+<area shape="rect" id="Node000005" href="$action_8c.html#a3b0ffaa27ccf48f017aeeaebeda02eba" title="Processa uma interrupção do rato chamando o seu interrupt handler e tratando a informação de acordo c..." alt="" coords="162,107,264,132"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="305,90,252,109,250,104,303,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="158,39,101,58,100,53,156,34"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="156,104,100,85,101,80,158,99"/>
+</map>

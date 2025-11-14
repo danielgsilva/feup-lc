@@ -1,0 +1,5 @@
+<map id="place_back" name="place_back">
+<area shape="rect" id="Node000001" title="Coloca a peça capturada no tabuleiro em (x,y), verificando se essa posição está EMPTY." alt="" coords="5,5,93,31"/>
+<area shape="rect" id="Node000002" href="$claustro_8c.html#a80def28072b711eccc7a4c06dd83eb75" title="Coloca/retira uma peça do tabuleiro em (x,y)." alt="" coords="141,5,218,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,16,125,16,125,21,93,21"/>
+</map>

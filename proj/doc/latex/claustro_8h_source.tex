@@ -1,0 +1,127 @@
+\doxysection{claustro.\+h}
+\hypertarget{claustro_8h_source}{}\label{claustro_8h_source}\mbox{\hyperlink{claustro_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_CLAUSTRO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_CLAUSTRO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{action_8h}{action.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}img/black\_pawn.xpm"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}img/blue\_pawn.xpm"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}img/board.xpm"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}img/board\_dark\_mode.xpm"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}img/current\_player.xpm"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}img/game\_over\_player1.xpm"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}img/game\_over\_player2.xpm"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}img/green\_pawn.xpm"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}img/grey\_pawn.xpm"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}img/menu.xpm"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}img/mouse\_pointer.xpm"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}img/play\_button.xpm"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}img/player1.xpm"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}img/player2.xpm"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}img/quit\_button.xpm"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}img/white\_pawn.xpm"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{sprite.h}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ \#define\ BOARD\_LENGTH\ 351}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ MARGIN\_LENGTH\ 7}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ DIVISION\_LENGTH\ 3}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ CELL\_LENGTH\ 65\ }\textcolor{comment}{//\ ((board\_length\ -\/\ (2\ *\ margin\_length)\ -\/\ (4\ *\ divison\_length))\ /\ BOARD\_SIZE)}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ \#define\ PAWN\_LENGTH\ 45}}
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ \#define\ PAWN\_OFFSET\ 10\ //\ ((cell\_length\ -\/\ pawn\_length)\ /\ 2)}}
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ \#define\ HELPER\_PAWN\_LENGTH\ 20}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ MOUSE\_POINTER\_OFFSET\ 32\ }\textcolor{comment}{//\ (cell\_length\ /\ 2)}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ DARK\_MODE\_HOUR\ 20}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ PLAYER1\ 1}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ PLAYER2\ 2}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ BOARD\_SIZE\ 5}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ EMPTY\ 0}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ NON\_OCCUPIABLE\_SQUARE\ 3}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ GOAL1\ 4}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ GOAL2\ 5}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a622d1ce7f2fbc1cb6cad9b145adfbea8}{menu}};}
+\DoxyCodeLine{00046\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a8f93566c918044e569242283cde53a3a}{play\_button}};}
+\DoxyCodeLine{00047\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_aea7a04407c70d5289d38d0ee7f1f4f12}{quit\_button}};}
+\DoxyCodeLine{00048\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a17ffa09c090d88cd76a28b960db57771}{game\_over\_player1}};}
+\DoxyCodeLine{00049\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_aec40b6b99226c9060f76e6a743031421}{game\_over\_player2}};}
+\DoxyCodeLine{00050\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_afeef4c687d3b684f517983fddfb200a9}{player1\_sp}};}
+\DoxyCodeLine{00051\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_aa76d303109cc0dc5a143b64fcb5f82be}{player2\_sp}};}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a1ccd9ffd38bd476d22c9e5eabf733ba9}{current\_player\_sp}};}
+\DoxyCodeLine{00053\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_ab616111deb473ce548962d24bdbba9a8}{mouse\_pointer}};}
+\DoxyCodeLine{00054\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a4f8832034685a4c65d0693b708b4b2f1}{board\_sp}};}
+\DoxyCodeLine{00055\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a795509937dfc64c548465165f2ffa1e7}{board\_sp\_dark\_mode}};}
+\DoxyCodeLine{00056\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a88b3ef449f5ed2120e7908a881a01c4f}{player1\_pawn}};}
+\DoxyCodeLine{00057\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a394e99031e8d4f112745145687dc81b5}{player2\_pawn}};}
+\DoxyCodeLine{00058\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a05048ecad0a79c644d74a8942a102019}{player1\_dark\_mode\_pawn}};}
+\DoxyCodeLine{00059\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_ad4208eaf7283c05a899ac2afd67d9b18}{player2\_dark\_mode\_pawn}};}
+\DoxyCodeLine{00060\ \mbox{\hyperlink{struct_sprite}{Sprite}}\ *\mbox{\hyperlink{claustro_8h_a99a24e55d74077bcfefde993e93163e6}{helper\_pawn}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00063\ \{}
+\DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_move_a6c6b7db77982e0f71fb68ac89765fa6d}{xi}};}
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_move_a340bca80a6d5c35aba964291a67d87fc}{yi}};}
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_move_a8bf08f3f781d0902d1ad3b5f1c32fe56}{xf}};}
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_move_af435dd45734b3e00540728db62e79e73}{yf}};}
+\DoxyCodeLine{00068\ \}\ \mbox{\hyperlink{struct_move}{Move}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ void(\mbox{\hyperlink{claustro_8h_adcd74acd09c60f59b71f5f8e077fe44b}{setup\_board}})();}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ void(\mbox{\hyperlink{claustro_8h_a6f31a24fe416c9ce9259ce11ea23a1f1}{print\_board}})();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00087\ void(\mbox{\hyperlink{claustro_8h_aa91befec91085c4e80aeeaf4c8a7a151}{update\_pawn\_move}})(\textcolor{keywordtype}{int}\ *pawn\_move\_pos,\ \textcolor{keywordtype}{bool}\ add\_or\_sub);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ int(\mbox{\hyperlink{claustro_8h_a88a97139ed295288b6fa3c73790413ea}{find\_board\_cell}})(int16\_t\ position);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ int(\mbox{\hyperlink{claustro_8h_a2748d2f3776b396f0b5e9c2fa1ea052f}{move}})(uint8\_t\ xi,\ uint8\_t\ yi,\ uint8\_t\ xf,\ uint8\_t\ yf);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ int(\mbox{\hyperlink{claustro_8h_acf9287683f8b2181ed6d35bb57733c79}{can\_move}})(uint8\_t\ player,\ uint8\_t\ xi,\ uint8\_t\ yi,\ uint8\_t\ xf,\ uint8\_t\ yf);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ int(\mbox{\hyperlink{claustro_8h_af55820e3bb93fd80447fa8d0d93ebdc3}{can\_pick}})(uint8\_t\ x,\ uint8\_t\ y);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ void(\mbox{\hyperlink{claustro_8h_a80def28072b711eccc7a4c06dd83eb75}{set\_pawn}})(uint8\_t\ pawn,\ uint8\_t\ x,\ uint8\_t\ y);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ int(\mbox{\hyperlink{claustro_8h_a837afae612ab07499500b4c2b3a034f1}{place\_back}})(uint8\_t\ x,\ uint8\_t\ y);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ int(\mbox{\hyperlink{claustro_8h_ae1a2e26afd9fddd52abd9795800fbfab}{game\_over}})();}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00131\ int(\mbox{\hyperlink{claustro_8h_aee833f0e330755c1d7010841d8118b50}{valid\_move}})(uint8\_t\ player);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00136\ void(\mbox{\hyperlink{claustro_8h_ac5342c02dc0b6fb2730106f6466be324}{swap\_player}})();}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00141\ void(\mbox{\hyperlink{claustro_8h_a964c3d899a3e721e68ea4d0e3fe2e6f4}{update\_state\_machine}})();}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00148\ void(\mbox{\hyperlink{claustro_8h_a7e7afd13ee4e35491b01ba9591ba1576}{create\_sprites}})();}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00153\ void(\mbox{\hyperlink{claustro_8h_a8fdbc6c7bfca3ef4a8800a3cdc19d932}{destroy\_sprites}})();}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00158\ int(\mbox{\hyperlink{claustro_8h_aa6a495a94944bda567df909f84c62396}{draw\_board}})();}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00163\ int(\mbox{\hyperlink{claustro_8h_a4f8333680932a3601be7afd102870efd}{draw\_pawns}})();}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00168\ void(\mbox{\hyperlink{claustro_8h_a15a6fe2679b120f3f3e3c2bd5bdb2405}{draw\_valid\_moves}})();}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00174\ int(\mbox{\hyperlink{claustro_8h_aa60deb7a9ca9f0d6be6d1e430f54c56b}{draw\_side\_info}})();}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00179\ int(\mbox{\hyperlink{claustro_8h_a3aea86648e314a44bf244bf4c0e8b347}{draw\_mouse\_pointer}})();}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00184\ void(\mbox{\hyperlink{claustro_8h_a83361e027b6f0dd917305f1f82dedda3}{draw\_main\_menu}})();}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00189\ void(\mbox{\hyperlink{claustro_8h_a3ff01944c06d2fdd90b25d38513516ac}{draw\_game\_over\_menu}})();}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00194\ void(\mbox{\hyperlink{claustro_8h_a8f7acda4de2ff9ede5fca68d2db09959}{draw\_frame}})();}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00199\ int(\mbox{\hyperlink{claustro_8h_ad298944b3db0ec284b74bd35a59280aa}{clicked\_play\_button}})();}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00204\ int(\mbox{\hyperlink{claustro_8h_a2ce96491758e5ff45076c803ef28a42d}{clicked\_quit\_button}})();}
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

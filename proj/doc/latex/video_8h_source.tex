@@ -1,0 +1,22 @@
+\doxysection{video.\+h}
+\hypertarget{video_8h_source}{}\label{video_8h_source}\mbox{\hyperlink{video_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_VIDEO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_VIDEO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{sprite_8h}{sprite.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ FRAME\_RATE\ 30}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ DIRECT\_COLOR\_MODE\_8\_8\_8\ 0x115\ }\textcolor{comment}{//\ 800x600}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ int(\mbox{\hyperlink{video_8h_afb4146df5590405404a911e802644f82}{set\_vbe\_mode}})(uint16\_t\ mode);}
+\DoxyCodeLine{00012\ \textcolor{keywordtype}{void}\ *(\mbox{\hyperlink{video_8h_acc11b311c479b1904fd45e8c6da5fcc3}{vg\_init}})\ (uint16\_t\ mode);}
+\DoxyCodeLine{00013\ int(\mbox{\hyperlink{video_8h_a6f895de9725f9f231f9a7f74b6087f60}{vg\_draw\_pixel}})(uint16\_t\ x,\ uint16\_t\ y,\ uint32\_t\ color);}
+\DoxyCodeLine{00014\ void(\mbox{\hyperlink{video_8h_a2a0c69b89825701f2522df99d7eb3312}{vg\_fill}})(uint32\_t\ color);}
+\DoxyCodeLine{00015\ void(\mbox{\hyperlink{video_8h_ac6c4fe7cd0ff5d5340aa5583f3a427a1}{vg\_double\_buffering}})();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

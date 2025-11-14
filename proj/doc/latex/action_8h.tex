@@ -1,0 +1,182 @@
+\doxysection{action.\+h File Reference}
+\hypertarget{action_8h}{}\label{action_8h}\index{action.h@{action.h}}
+{\ttfamily \#include "{}claustro.\+h"{}}\newline
+{\ttfamily \#include "{}kbd.\+h"{}}\newline
+{\ttfamily \#include "{}mouse.\+h"{}}\newline
+{\ttfamily \#include "{}rtc.\+h"{}}\newline
+{\ttfamily \#include "{}video.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for action.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{action_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{action_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \{ \newline
+\mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285ac9e8468c9768465a565bc176a753e261}{NEW\+\_\+\+GAME}}
+, \mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a3496dd3dd1c802b4847446f0ce8c4d4b}{CHOOSE\+\_\+\+PAWN}}
+, \mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a5cfb854da24ab6a30ae87ca6912e689b}{MOVEMENT}}
+, \mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a2a90047fe45c6934034c89fd9fb5dbbb}{CAPTURE}}
+, \newline
+\mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a871723195985a4ae22d7e10d99bf8a00}{GAME\+\_\+\+OVER}}
+, \mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a76bdc8adfd6c6463ab269ff4c06be9b4}{QUIT}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{action_8h_a215b459a4be4d2aa0c3471862e8b8973}{timer\+\_\+action}} ()
+\begin{DoxyCompactList}\small\item\em Processa uma interrupção do timer chamando o seu interrupt handler e executa double-\/buffering à taxa definida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{action_8h_a26b41b1ded0c592455ceeb42de056ad5}{kbd\+\_\+action}} ()
+\begin{DoxyCompactList}\small\item\em Processa uma interrupção do teclado chamando o seu interrupt handler e tratando a informação de acordo com estado do jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{action_8h_a3b0ffaa27ccf48f017aeeaebeda02eba}{mouse\+\_\+action}} ()
+\begin{DoxyCompactList}\small\item\em Processa uma interrupção do rato chamando o seu interrupt handler e tratando a informação de acordo com estado do jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{action_8h_af16516e3022c97f7e0f4588ac43995df}{rtc\+\_\+action}} ()
+\begin{DoxyCompactList}\small\item\em Processa uma interrupção do RTC, chamando o seu interrupt handler e ativa/desativa o dark mode de acordo com a hora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285}\index{action.h@{action.h}!GameState@{GameState}}
+\index{GameState@{GameState}!action.h@{action.h}}
+\doxysubsubsection{\texorpdfstring{GameState}{GameState}}
+{\footnotesize\ttfamily \label{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+enum \mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEW\_GAME@{NEW\_GAME}!action.h@{action.h}}\index{action.h@{action.h}!NEW\_GAME@{NEW\_GAME}}}\Hypertarget{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285ac9e8468c9768465a565bc176a753e261}\label{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+NEW\+\_\+\+GAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHOOSE\_PAWN@{CHOOSE\_PAWN}!action.h@{action.h}}\index{action.h@{action.h}!CHOOSE\_PAWN@{CHOOSE\_PAWN}}}\Hypertarget{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a3496dd3dd1c802b4847446f0ce8c4d4b}\label{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+CHOOSE\+\_\+\+PAWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVEMENT@{MOVEMENT}!action.h@{action.h}}\index{action.h@{action.h}!MOVEMENT@{MOVEMENT}}}\Hypertarget{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a5cfb854da24ab6a30ae87ca6912e689b}\label{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+MOVEMENT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAPTURE@{CAPTURE}!action.h@{action.h}}\index{action.h@{action.h}!CAPTURE@{CAPTURE}}}\Hypertarget{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a2a90047fe45c6934034c89fd9fb5dbbb}\label{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+CAPTURE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME\_OVER@{GAME\_OVER}!action.h@{action.h}}\index{action.h@{action.h}!GAME\_OVER@{GAME\_OVER}}}\Hypertarget{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a871723195985a4ae22d7e10d99bf8a00}\label{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+GAME\+\_\+\+OVER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUIT@{QUIT}!action.h@{action.h}}\index{action.h@{action.h}!QUIT@{QUIT}}}\Hypertarget{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285a76bdc8adfd6c6463ab269ff4c06be9b4}\label{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285} 
+QUIT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{action_8h_a26b41b1ded0c592455ceeb42de056ad5}\index{action.h@{action.h}!kbd\_action@{kbd\_action}}
+\index{kbd\_action@{kbd\_action}!action.h@{action.h}}
+\doxysubsubsection{\texorpdfstring{kbd\_action()}{kbd\_action()}}
+{\footnotesize\ttfamily \label{action_8h_a26b41b1ded0c592455ceeb42de056ad5} 
+void kbd\+\_\+action (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processa uma interrupção do teclado chamando o seu interrupt handler e tratando a informação de acordo com estado do jogo. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{action_8h_a26b41b1ded0c592455ceeb42de056ad5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{action_8h_a26b41b1ded0c592455ceeb42de056ad5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{action_8h_a3b0ffaa27ccf48f017aeeaebeda02eba}\index{action.h@{action.h}!mouse\_action@{mouse\_action}}
+\index{mouse\_action@{mouse\_action}!action.h@{action.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_action()}{mouse\_action()}}
+{\footnotesize\ttfamily \label{action_8h_a3b0ffaa27ccf48f017aeeaebeda02eba} 
+void mouse\+\_\+action (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processa uma interrupção do rato chamando o seu interrupt handler e tratando a informação de acordo com estado do jogo. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{action_8h_a3b0ffaa27ccf48f017aeeaebeda02eba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{action_8h_a3b0ffaa27ccf48f017aeeaebeda02eba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{action_8h_af16516e3022c97f7e0f4588ac43995df}\index{action.h@{action.h}!rtc\_action@{rtc\_action}}
+\index{rtc\_action@{rtc\_action}!action.h@{action.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_action()}{rtc\_action()}}
+{\footnotesize\ttfamily \label{action_8h_af16516e3022c97f7e0f4588ac43995df} 
+void rtc\+\_\+action (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processa uma interrupção do RTC, chamando o seu interrupt handler e ativa/desativa o dark mode de acordo com a hora. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{action_8h_af16516e3022c97f7e0f4588ac43995df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{action_8h_af16516e3022c97f7e0f4588ac43995df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{action_8h_a215b459a4be4d2aa0c3471862e8b8973}\index{action.h@{action.h}!timer\_action@{timer\_action}}
+\index{timer\_action@{timer\_action}!action.h@{action.h}}
+\doxysubsubsection{\texorpdfstring{timer\_action()}{timer\_action()}}
+{\footnotesize\ttfamily \label{action_8h_a215b459a4be4d2aa0c3471862e8b8973} 
+void timer\+\_\+action (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Processa uma interrupção do timer chamando o seu interrupt handler e executa double-\/buffering à taxa definida. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{action_8h_a215b459a4be4d2aa0c3471862e8b8973_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{action_8h_a215b459a4be4d2aa0c3471862e8b8973_icgraph}
+\end{center}
+\end{figure}

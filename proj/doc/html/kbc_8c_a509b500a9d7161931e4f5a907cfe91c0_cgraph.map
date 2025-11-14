@@ -1,0 +1,8 @@
+<map id="kbc_read_out_buf" name="kbc_read_out_buf">
+<area shape="rect" id="Node000001" title="Lê o output buffer. Caso haja algum erro na comunicação ou dados inesperados, descarta esse valor." alt="" coords="5,31,130,56"/>
+<area shape="rect" id="Node000002" href="$kbc_8c.html#a2f901acc7ec2e88efa1f7eb391832e67" title="Lê o status register." alt="" coords="178,5,288,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,31,162,26,163,32,131,37"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="336,31,426,56"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="130,41,320,41,320,46,130,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,25,321,31,320,36,288,30"/>
+</map>

@@ -1,0 +1,44 @@
+\doxysection{rtc.\+h}
+\hypertarget{rtc_8h_source}{}\label{rtc_8h_source}\mbox{\hyperlink{rtc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_RTC\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_RTC\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ RTC\_IRQ\ 8}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ RTC\_ADDR\_REG\ 0x70}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ RTC\_DATA\_REG\ 0x71}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ RTC\_SECONDS\ 0}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ RTC\_MINUTES\ 2}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ RTC\_HOURS\ 4}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_A\ 10}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_A\_UIP\ BIT(7)\ }\textcolor{comment}{//\ if\ set\ to\ 1,\ update\ in\ progress.\ Do\ not\ access\ time\ registers}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_B\ 11}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_B\_UIE\ BIT(4)}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_C\ 12}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ RTC\_REGISTER\_C\_UF\ BIT(4)}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00021\ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c___time_ad1af8d0c97eb4bfeaecb18f66bfe56dd}{hours}};}
+\DoxyCodeLine{00022\ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c___time_a9fe2e6fe206a73e74659c55b081a29de}{minutes}};}
+\DoxyCodeLine{00023\ \ \ uint8\_t\ \mbox{\hyperlink{struct_r_t_c___time_afeacbd24b83d32aa12f891da88a22292}{seconds}};}
+\DoxyCodeLine{00024\ \}\ \mbox{\hyperlink{struct_r_t_c___time}{RTC\_Time}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ int(\mbox{\hyperlink{rtc_8h_a5171a9c0f54940fe60f7500896afcc86}{rtc\_subscribe\_int}})(uint8\_t\ *bit\_no);}
+\DoxyCodeLine{00027\ int(\mbox{\hyperlink{rtc_8h_ab8f17bf5280c908c8b199a90fefcc758}{rtc\_unsubscribe\_int}})();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ int(\mbox{\hyperlink{rtc_8h_a5cdc9b616ed381701ffbd367adbdf559}{rtc\_read}})(uint8\_t\ reg,\ uint8\_t\ *data);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ int(\mbox{\hyperlink{rtc_8h_a05c07a1d1f46104a94f978a345daf64e}{rtc\_read\_time}})(uint8\_t\ reg,\ uint8\_t\ *data);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ int(\mbox{\hyperlink{rtc_8h_a8ae29a4dd3292c10807a6dfca5e11e11}{rtc\_write}})(uint8\_t\ reg,\ uint8\_t\ data);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ int(\mbox{\hyperlink{rtc_8h_aeb3c7fbcf89e53d83750885ed7ac59a3}{rtc\_enable\_update\_int}})();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ void(\mbox{\hyperlink{rtc_8h_a75dad42881d64cf07cf1bdc2979a7056}{rtc\_ih}})();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,31 @@
+<map id="i8042.h" name="i8042.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="163,5,226,31"/>
+<area shape="rect" id="Node000002" href="$kbc_8h.html" title=" " alt="" coords="136,79,189,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,46,170,80,165,77,180,44"/>
+<area shape="rect" id="Node000011" href="$mouse_8h.html" title=" " alt="" coords="203,153,274,178"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="205,45,237,151,232,153,200,47"/>
+<area shape="rect" id="Node000003" href="$kbc_8c.html" title=" " alt="" coords="125,153,178,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,120,156,153,151,152,156,119"/>
+<area shape="rect" id="Node000004" href="$kbd_8h.html" title=" " alt="" coords="48,153,101,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="137,117,91,154,87,150,134,113"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="188,114,228,150,224,154,184,117"/>
+<area shape="rect" id="Node000005" href="$action_8h.html" title=" " alt="" coords="127,226,195,252"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="102,186,148,224,145,228,99,191"/>
+<area shape="rect" id="Node000009" href="$proj_8c.html" title=" " alt="" coords="8,374,61,399"/>
+<area shape="poly" id="edge12_Node000004_Node000009" title=" " alt="" coords="59,193,31,241,19,270,10,300,10,325,19,351,30,372,25,375,14,353,5,326,5,300,14,268,26,239,55,190"/>
+<area shape="rect" id="Node000010" href="$kbd_8c.html" title=" " alt="" coords="48,226,101,252"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="77,194,77,226,72,226,72,194"/>
+<area shape="rect" id="Node000006" href="$action_8c.html" title=" " alt="" coords="31,300,99,326"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="134,264,83,302,80,297,131,259"/>
+<area shape="rect" id="Node000007" href="$claustro_8h.html" title=" " alt="" coords="123,300,202,326"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="155,267,158,299,153,300,150,267"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="113,257,58,278,35,290,22,301,16,319,17,338,30,372,25,374,12,339,11,318,18,299,32,285,55,273,111,252"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="168,285,166,252,171,252,173,284"/>
+<area shape="rect" id="Node000008" href="$claustro_8c.html" title=" " alt="" coords="123,374,202,399"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="165,341,165,373,160,373,160,341"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="129,336,57,375,55,371,126,331"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="216,191,176,228,172,224,212,187"/>
+<area shape="poly" id="edge16_Node000011_Node000009" title=" " alt="" coords="245,194,246,224,243,259,234,295,215,327,189,345,148,360,62,382,61,377,146,355,186,340,211,324,229,293,238,259,240,224,239,194"/>
+<area shape="rect" id="Node000012" href="$mouse_8c.html" title=" " alt="" coords="276,226,347,252"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="263,187,301,224,297,228,260,191"/>
+</map>

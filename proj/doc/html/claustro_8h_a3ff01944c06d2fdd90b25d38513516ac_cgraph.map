@@ -1,0 +1,7 @@
+<map id="draw_game_over_menu" name="draw_game_over_menu">
+<area shape="rect" id="Node000001" title="Desenha o menu final, incluido os botões PLAY e QUIT." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a6c75fbf31230126d2f19b29deaf24b2f" title=" " alt="" coords="213,5,301,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,16,197,16,197,21,165,21"/>
+<area shape="rect" id="Node000003" href="$video_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title=" " alt="" coords="349,5,453,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,16,333,16,333,21,301,21"/>
+</map>

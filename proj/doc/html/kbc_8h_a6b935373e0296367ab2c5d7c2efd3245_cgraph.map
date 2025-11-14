@@ -1,0 +1,7 @@
+<map id="kbc_write_command" name="kbc_write_command">
+<area shape="rect" id="Node000001" title="Envia um comando ao KBC." alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000002" href="$kbc_8c.html#a2f901acc7ec2e88efa1f7eb391832e67" title="Lê o status register." alt="" coords="195,5,305,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,179,16,179,21,147,21"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="353,5,443,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,16,337,16,337,21,305,21"/>
+</map>

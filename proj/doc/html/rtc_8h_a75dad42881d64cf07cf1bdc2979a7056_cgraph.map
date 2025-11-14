@@ -1,0 +1,10 @@
+<map id="rtc_ih" name="rtc_ih">
+<area shape="rect" id="Node000001" title="Lê a hora atual, lendo os registos das horas, minutos e segundos (registos 4, 2 e 0 respetivamente)." alt="" coords="5,5,59,31"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#a5cdc9b616ed381701ffbd367adbdf559" title="Read register reg of the RTC, writing the address of the register to the RTC_ADDR_REG and reading one..." alt="" coords="255,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,16,239,16,239,21,59,21"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#a05c07a1d1f46104a94f978a345daf64e" title="Lê o valor do registo reg (4, 2 ou 0) e converte de BCD para binário." alt="" coords="107,31,207,56"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="60,21,92,28,91,33,59,26"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="371,5,462,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="324,16,356,16,356,21,324,21"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="207,31,239,25,240,30,208,36"/>
+</map>

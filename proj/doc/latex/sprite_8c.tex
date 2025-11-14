@@ -1,0 +1,68 @@
+\doxysection{sprite.\+c File Reference}
+\hypertarget{sprite_8c}{}\label{sprite_8c}\index{sprite.c@{sprite.c}}
+{\ttfamily \#include "{}sprite.\+h"{}}\newline
+Include dependency graph for sprite.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{sprite_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8c_abfa3f5e07cf276e0fd70cc89597d5d5f}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t xpm, int x, int y)
+\item 
+void \mbox{\hyperlink{sprite_8c_af16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sp)
+\item 
+int \mbox{\hyperlink{sprite_8c_a6c75fbf31230126d2f19b29deaf24b2f}{draw\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sprite_8c_abfa3f5e07cf276e0fd70cc89597d5d5f}\index{sprite.c@{sprite.c}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8c_abfa3f5e07cf276e0fd70cc89597d5d5f} 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+Creates a new sprite from XPM "{}xpm"{}, with specified position (within the screen limits); Does not draw the sprite on the screen Returns NULL on invalid pixmap. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8c_abfa3f5e07cf276e0fd70cc89597d5d5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8c_af16c6befaac9ffb673b9e3c798d542ed}\index{sprite.c@{sprite.c}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8c_af16c6befaac9ffb673b9e3c798d542ed} 
+void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sp}{}\end{DoxyParamCaption})}
+
+The "{}sp"{} sprite is erased from memory and used resources released. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8c_af16c6befaac9ffb673b9e3c798d542ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8c_a6c75fbf31230126d2f19b29deaf24b2f}\index{sprite.c@{sprite.c}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8c_a6c75fbf31230126d2f19b29deaf24b2f} 
+int draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sp}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{sprite_8c_a6c75fbf31230126d2f19b29deaf24b2f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8c_a6c75fbf31230126d2f19b29deaf24b2f_icgraph}
+\end{center}
+\end{figure}

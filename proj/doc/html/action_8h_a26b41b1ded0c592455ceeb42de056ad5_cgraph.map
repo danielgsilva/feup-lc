@@ -1,0 +1,73 @@
+<map id="kbd_action" name="kbd_action">
+<area shape="rect" id="Node000001" title="Processa uma interrupção do teclado chamando o seu interrupt handler e tratando a informação de acord..." alt="" coords="5,627,90,653"/>
+<area shape="rect" id="Node000002" href="$claustro_8c.html#a8f7acda4de2ff9ede5fca68d2db09959" title="Desenha uma frame de acordo com o estado do jogo." alt="" coords="169,227,259,253"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,626,199,266,204,268,57,628"/>
+<area shape="rect" id="Node000014" href="$kbd_8c.html#a3b35eecf289446fe614818dd6ab6d5bf" title=" " alt="" coords="184,651,244,677"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="91,643,169,655,168,660,90,649"/>
+<area shape="rect" id="Node000018" href="$claustro_8c.html#aa91befec91085c4e80aeeaf4c8a7a151" title="Incrementa/decrementa uma unidade à váriável passada por argumento que representa um campo da struct ..." alt="" coords="145,701,283,726"/>
+<area shape="poly" id="edge26_Node000001_Node000018" title=" " alt="" coords="71,651,139,687,152,692,150,697,137,692,69,656"/>
+<area shape="rect" id="Node000019" href="$claustro_8c.html#a964c3d899a3e721e68ea4d0e3fe2e6f4" title="Atualiza o estado do jogo de acordo com os eventos do rato/teclado." alt="" coords="138,602,290,628"/>
+<area shape="poly" id="edge27_Node000001_Node000019" title=" " alt="" coords="90,631,122,626,123,631,91,636"/>
+<area shape="rect" id="Node000003" href="$claustro_8c.html#aa6a495a94944bda567df909f84c62396" title="Desenha o tabuleiro (e as peças) de acordo com o modo atual (escuro ou claro)." alt="" coords="362,202,450,228"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,232,346,220,347,225,260,237"/>
+<area shape="rect" id="Node000005" href="$sprite_8c.html#a6c75fbf31230126d2f19b29deaf24b2f" title=" " alt="" coords="731,202,819,228"/>
+<area shape="poly" id="edge15_Node000002_Node000005" title=" " alt="" coords="243,224,362,177,441,154,522,137,603,125,639,126,683,138,723,160,754,188,751,192,720,164,681,143,638,131,603,130,523,143,442,159,364,182,245,229"/>
+<area shape="rect" id="Node000008" href="$claustro_8c.html#a3ff01944c06d2fdd90b25d38513516ac" title="Desenha o menu final, incluido os botões PLAY e QUIT." alt="" coords="522,303,682,329"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="260,246,518,297,517,302,258,251"/>
+<area shape="rect" id="Node000009" href="$claustro_8c.html#a83361e027b6f0dd917305f1f82dedda3" title="Desenha o menu principal, incluido os botões PLAY e QUIT." alt="" coords="540,51,664,77"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="220,226,236,197,262,160,296,123,337,94,383,75,432,63,480,58,525,56,525,62,481,63,433,68,384,80,339,98,299,127,266,164,241,200,224,228"/>
+<area shape="rect" id="Node000010" href="$claustro_8c.html#a3aea86648e314a44bf244bf4c0e8b347" title="Desenha o cursor." alt="" coords="531,353,673,378"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="243,251,339,292,436,323,526,346,525,351,434,328,337,297,241,256"/>
+<area shape="rect" id="Node000011" href="$claustro_8c.html#a15a6fe2679b120f3f3e3c2bd5bdb2405" title="Desenha os destinos/jogadas possíveis para uma peça quando o cursor está por cima da mesma." alt="" coords="537,402,667,428"/>
+<area shape="poly" id="edge16_Node000002_Node000011" title=" " alt="" coords="229,251,275,294,306,318,339,339,385,360,432,376,522,399,521,404,431,381,383,364,337,344,303,323,272,299,226,255"/>
+<area shape="rect" id="Node000013" href="$video_8c.html#a2a0c69b89825701f2522df99d7eb3312" title=" " alt="" coords="747,77,803,102"/>
+<area shape="poly" id="edge19_Node000002_Node000013" title=" " alt="" coords="217,226,232,191,256,144,291,97,313,75,337,58,383,32,425,15,465,6,503,3,543,5,584,12,682,36,715,49,744,65,742,70,713,54,681,41,583,17,542,10,503,8,466,11,427,20,385,37,339,62,316,79,295,100,261,147,237,193,222,228"/>
+<area shape="rect" id="Node000004" href="$claustro_8c.html#a4f8333680932a3601be7afd102870efd" title="Desenha as peças." alt="" coords="555,153,649,178"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="450,201,539,178,540,184,452,206"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="451,224,523,237,602,244,681,237,719,230,720,235,682,243,602,249,522,243,450,229"/>
+<area shape="rect" id="Node000007" href="$claustro_8c.html#aa60deb7a9ca9f0d6be6d1e430f54c56b" title="Desenha informação complementar ao tabuleiro: jogador atual e associação entre as peças e o jogador." alt="" coords="548,202,656,228"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="451,212,532,212,532,217,451,217"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="651,176,717,196,715,201,649,181"/>
+<area shape="rect" id="Node000006" href="$video_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title=" " alt="" coords="868,139,972,165"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="806,199,873,169,876,174,808,204"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="657,212,716,212,716,217,657,217"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="641,300,680,282,715,259,745,235,749,240,718,263,683,286,643,305"/>
+<area shape="poly" id="edge12_Node000009_Node000005" title=" " alt="" coords="649,75,683,94,707,116,729,140,761,187,757,190,725,143,704,119,680,98,647,80"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="661,350,680,339,705,317,727,291,759,240,763,243,731,294,709,321,683,344,663,354"/>
+<area shape="poly" id="edge18_Node000011_Node000005" title=" " alt="" coords="663,399,680,389,711,355,735,315,752,276,764,242,769,243,757,277,740,318,715,358,683,393,666,404"/>
+<area shape="rect" id="Node000012" href="$claustro_8c.html#acf9287683f8b2181ed6d35bb57733c79" title="Valida uma jogada de acordo com as regras do Claustro." alt="" coords="734,453,816,478"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="649,426,720,447,719,452,648,431"/>
+<area shape="poly" id="edge20_Node000013_Node000006" title=" " alt="" coords="804,99,875,130,873,135,802,104"/>
+<area shape="rect" id="Node000015" href="$kbc_8c.html#a509b500a9d7161931e4f5a907cfe91c0" title="Lê o output buffer. Caso haja algum erro na comunicação ou dados inesperados, descarta esse valor." alt="" coords="344,849,468,874"/>
+<area shape="poly" id="edge22_Node000014_Node000015" title=" " alt="" coords="245,664,269,672,292,686,307,705,314,725,317,762,320,799,326,817,340,836,342,837,338,841,336,839,322,820,314,800,312,763,309,726,302,708,288,690,267,676,243,669"/>
+<area shape="rect" id="Node000016" href="$kbc_8c.html#a2f901acc7ec2e88efa1f7eb391832e67" title="Lê o status register." alt="" coords="547,874,657,900"/>
+<area shape="poly" id="edge23_Node000015_Node000016" title=" " alt="" coords="469,867,532,875,531,880,468,872"/>
+<area shape="rect" id="Node000017" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="730,849,820,874"/>
+<area shape="poly" id="edge25_Node000015_Node000017" title=" " alt="" coords="469,859,714,859,714,864,469,864"/>
+<area shape="poly" id="edge24_Node000016_Node000017" title=" " alt="" coords="657,876,714,868,715,873,658,881"/>
+<area shape="rect" id="Node000020" href="$claustro_8c.html#af55820e3bb93fd80447fa8d0d93ebdc3" title="Verifica se a peça em (x,y) pertence ao jogador atual." alt="" coords="370,454,443,480"/>
+<area shape="poly" id="edge28_Node000019_Node000020" title=" " alt="" coords="223,600,268,547,300,516,337,488,354,479,356,484,339,493,304,520,272,550,227,603"/>
+<area shape="rect" id="Node000021" href="$claustro_8c.html#ad298944b3db0ec284b74bd35a59280aa" title="Verifica se o botão PLAY foi clicado pelo rato." alt="" coords="338,503,474,529"/>
+<area shape="poly" id="edge29_Node000019_Node000021" title=" " alt="" coords="233,599,279,569,337,538,348,533,350,537,339,542,282,574,236,604"/>
+<area shape="rect" id="Node000022" href="$claustro_8c.html#a2ce96491758e5ff45076c803ef28a42d" title="Verifica se o botão QUIT foi clicado pelo rato." alt="" coords="340,553,473,578"/>
+<area shape="poly" id="edge30_Node000019_Node000022" title=" " alt="" coords="266,599,338,580,339,585,268,604"/>
+<area shape="rect" id="Node000023" href="$claustro_8c.html#ae1a2e26afd9fddd52abd9795800fbfab" title="Avalia um tabuleiro e verifica se há um vencedor." alt="" coords="364,799,449,825"/>
+<area shape="poly" id="edge31_Node000019_Node000023" title=" " alt="" coords="277,626,292,637,307,656,314,675,317,713,320,750,326,768,340,786,351,795,347,799,336,790,322,771,314,751,312,713,309,676,302,659,288,641,274,630"/>
+<area shape="rect" id="Node000025" href="$claustro_8c.html#a2748d2f3776b396f0b5e9c2fa1ea052f" title="Valida e executa uma jogada, movendo a peça de (xi, yi) para (xf, yf)." alt="" coords="380,405,433,430"/>
+<area shape="poly" id="edge34_Node000019_Node000025" title=" " alt="" coords="219,600,235,568,261,525,295,479,336,439,363,425,366,430,340,444,299,483,265,528,240,570,223,603"/>
+<area shape="rect" id="Node000027" href="$claustro_8c.html#a837afae612ab07499500b4c2b3a034f1" title="Coloca a peça capturada no tabuleiro em (x,y), verificando se essa posição está EMPTY." alt="" coords="363,602,450,628"/>
+<area shape="poly" id="edge37_Node000019_Node000027" title=" " alt="" coords="290,612,347,612,347,617,290,617"/>
+<area shape="rect" id="Node000028" href="$claustro_8c.html#a6f31a24fe416c9ce9259ce11ea23a1f1" title="Imprime o jogador atual e o tabuleiro na consola." alt="" coords="364,651,449,677"/>
+<area shape="poly" id="edge39_Node000019_Node000028" title=" " alt="" coords="268,626,349,647,348,652,266,631"/>
+<area shape="rect" id="Node000029" href="$claustro_8c.html#adcd74acd09c60f59b71f5f8e077fe44b" title="Inicializa a matriz board (representação interna do tabuleiro) com os valores que reprensentam o disp..." alt="" coords="360,701,452,726"/>
+<area shape="poly" id="edge40_Node000019_Node000029" title=" " alt="" coords="270,626,291,636,307,649,316,662,325,675,340,687,347,692,344,696,336,692,321,678,312,665,303,653,289,641,267,631"/>
+<area shape="rect" id="Node000030" href="$claustro_8c.html#ac5342c02dc0b6fb2730106f6466be324" title="Troca os jogadores." alt="" coords="359,750,453,776"/>
+<area shape="poly" id="edge41_Node000019_Node000030" title=" " alt="" coords="275,626,292,637,303,649,311,662,317,688,323,713,329,725,340,737,347,742,344,746,336,741,325,728,318,715,312,689,306,664,299,653,288,641,272,630"/>
+<area shape="rect" id="Node000024" href="$claustro_8c.html#aee833f0e330755c1d7010841d8118b50" title="Verifica se o jogador passado como argumento tem pelo menos uma jogada válida." alt="" coords="558,711,646,737"/>
+<area shape="poly" id="edge32_Node000023_Node000024" title=" " alt="" coords="446,796,473,786,562,742,564,747,475,790,448,801"/>
+<area shape="poly" id="edge33_Node000024_Node000012" title=" " alt="" coords="610,709,754,490,759,493,614,712"/>
+<area shape="poly" id="edge35_Node000025_Node000012" title=" " alt="" coords="434,421,523,437,627,450,719,459,719,464,626,456,522,443,433,426"/>
+<area shape="rect" id="Node000026" href="$claustro_8c.html#a80def28072b711eccc7a4c06dd83eb75" title="Coloca/retira uma peça do tabuleiro em (x,y)." alt="" coords="563,553,641,578"/>
+<area shape="poly" id="edge36_Node000025_Node000026" title=" " alt="" coords="434,421,476,439,520,480,579,540,575,543,516,483,473,444,432,426"/>
+<area shape="poly" id="edge38_Node000027_Node000026" title=" " alt="" coords="450,601,548,576,549,581,451,606"/>
+</map>

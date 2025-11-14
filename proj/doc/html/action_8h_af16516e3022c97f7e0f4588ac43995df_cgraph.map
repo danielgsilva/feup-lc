@@ -1,0 +1,12 @@
+<map id="rtc_action" name="rtc_action">
+<area shape="rect" id="Node000001" title="Processa uma interrupção do RTC, chamando o seu interrupt handler e ativa/desativa o dark mode de aco..." alt="" coords="5,5,84,31"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#a75dad42881d64cf07cf1bdc2979a7056" title="Lê a hora atual, lendo os registos das horas, minutos e segundos (registos 4, 2 e 0 respetivamente)." alt="" coords="132,5,185,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,16,116,16,116,21,84,21"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#a5cdc9b616ed381701ffbd367adbdf559" title="Read register reg of the RTC, writing the address of the register to the RTC_ADDR_REG and reading one..." alt="" coords="381,5,450,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,16,365,16,365,21,185,21"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#a05c07a1d1f46104a94f978a345daf64e" title="Lê o valor do registo reg (4, 2 ou 0) e converte de BCD para binário." alt="" coords="233,31,333,56"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="186,21,218,28,217,33,185,26"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="498,5,588,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="450,16,482,16,482,21,450,21"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="333,31,366,25,367,30,334,36"/>
+</map>

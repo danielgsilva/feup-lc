@@ -1,0 +1,17 @@
+<map id="set_pawn" name="set_pawn">
+<area shape="rect" id="Node000001" title="Coloca/retira uma peça do tabuleiro em (x,y)." alt="" coords="648,31,725,56"/>
+<area shape="rect" id="Node000002" href="$claustro_8c.html#a2748d2f3776b396f0b5e9c2fa1ea052f" title="Valida e executa uma jogada, movendo a peça de (xi, yi) para (xf, yf)." alt="" coords="529,5,583,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="631,36,583,26,584,21,633,30"/>
+<area shape="rect" id="Node000007" href="$claustro_8c.html#a837afae612ab07499500b4c2b3a034f1" title="Coloca a peça capturada no tabuleiro em (x,y), verificando se essa posição está EMPTY." alt="" coords="512,55,600,80"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="632,56,601,62,600,57,632,51"/>
+<area shape="rect" id="Node000003" href="$claustro_8c.html#a964c3d899a3e721e68ea4d0e3fe2e6f4" title="Atualiza o estado do jogo de acordo com os eventos do rato/teclado." alt="" coords="312,31,464,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="514,27,465,35,464,29,513,22"/>
+<area shape="rect" id="Node000004" href="$action_8c.html#a26b41b1ded0c592455ceeb42de056ad5" title="Processa uma interrupção do teclado chamando o seu interrupt handler e tratando a informação de acord..." alt="" coords="171,5,255,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="296,33,255,27,256,22,297,28"/>
+<area shape="rect" id="Node000006" href="$action_8c.html#a3b0ffaa27ccf48f017aeeaebeda02eba" title="Processa uma interrupção do rato chamando o seu interrupt handler e tratando a informação de acordo c..." alt="" coords="162,55,264,80"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="297,59,265,63,264,58,296,53"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#af244d65e69677cf312af1950452ec256" title=" " alt="" coords="5,31,114,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="156,30,114,37,113,32,155,25"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="146,60,113,55,114,49,147,54"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="496,62,464,57,465,52,497,56"/>
+</map>

@@ -1,0 +1,104 @@
+\doxysection{sprite.\+h File Reference}
+\hypertarget{sprite_8h}{}\label{sprite_8h}\index{sprite.h@{sprite.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}video.\+h"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for sprite.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{sprite_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sprite_8h_a61ae6f1ae401c962137f2ae1d2a158df}{BACKGROUND\+\_\+\+COLOR}}~0x721919
+\item 
+\#define \mbox{\hyperlink{sprite_8h_a66653ee4d333c6e625b19ecdee6cb9ac}{TRANSPARENT\+\_\+\+COLOR}}~0x000001
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sprite_8h_abfa3f5e07cf276e0fd70cc89597d5d5f}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t xpm, int x, int y)
+\item 
+void \mbox{\hyperlink{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sp)
+\item 
+int \mbox{\hyperlink{sprite_8h_a6c75fbf31230126d2f19b29deaf24b2f}{draw\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{sprite_8h_a61ae6f1ae401c962137f2ae1d2a158df}\index{sprite.h@{sprite.h}!BACKGROUND\_COLOR@{BACKGROUND\_COLOR}}
+\index{BACKGROUND\_COLOR@{BACKGROUND\_COLOR}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{BACKGROUND\_COLOR}{BACKGROUND\_COLOR}}
+{\footnotesize\ttfamily \label{sprite_8h_a61ae6f1ae401c962137f2ae1d2a158df} 
+\#define BACKGROUND\+\_\+\+COLOR~0x721919}
+
+\Hypertarget{sprite_8h_a66653ee4d333c6e625b19ecdee6cb9ac}\index{sprite.h@{sprite.h}!TRANSPARENT\_COLOR@{TRANSPARENT\_COLOR}}
+\index{TRANSPARENT\_COLOR@{TRANSPARENT\_COLOR}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{TRANSPARENT\_COLOR}{TRANSPARENT\_COLOR}}
+{\footnotesize\ttfamily \label{sprite_8h_a66653ee4d333c6e625b19ecdee6cb9ac} 
+\#define TRANSPARENT\+\_\+\+COLOR~0x000001}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sprite_8h_abfa3f5e07cf276e0fd70cc89597d5d5f}\index{sprite.h@{sprite.h}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8h_abfa3f5e07cf276e0fd70cc89597d5d5f} 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+Creates a new sprite from XPM "{}xpm"{}, with specified position (within the screen limits); Does not draw the sprite on the screen Returns NULL on invalid pixmap. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_abfa3f5e07cf276e0fd70cc89597d5d5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}\index{sprite.h@{sprite.h}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed} 
+void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sp}{}\end{DoxyParamCaption})}
+
+The "{}sp"{} sprite is erased from memory and used resources released. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{sprite_8h_a6c75fbf31230126d2f19b29deaf24b2f}\index{sprite.h@{sprite.h}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily \label{sprite_8h_a6c75fbf31230126d2f19b29deaf24b2f} 
+int draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sp}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{sprite_8h_a6c75fbf31230126d2f19b29deaf24b2f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a6c75fbf31230126d2f19b29deaf24b2f_icgraph}
+\end{center}
+\end{figure}

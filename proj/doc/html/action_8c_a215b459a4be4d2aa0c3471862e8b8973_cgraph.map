@@ -1,0 +1,7 @@
+<map id="timer_action" name="timer_action">
+<area shape="rect" id="Node000001" title="Processa uma interrupção do timer chamando o seu interrupt handler e executa double&#45;buffering à taxa ..." alt="" coords="5,31,98,56"/>
+<area shape="rect" id="Node000002" href="$timer_8c.html#a10fc9c867b15c7da6649311c9987cd17" title=" " alt="" coords="154,5,275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,34,138,27,139,33,99,39"/>
+<area shape="rect" id="Node000003" href="$video_8c.html#ac6c4fe7cd0ff5d5340aa5583f3a427a1" title=" " alt="" coords="146,55,283,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="99,48,131,52,130,58,98,53"/>
+</map>

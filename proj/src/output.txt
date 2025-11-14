@@ -1,0 +1,114 @@
+error: kbc_read_out_buf() attempts exceeded
+error mouse_ih(): kbc_read_out_buf()
+Current player: 1
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1|     1   1 |
+2| 2       1 |
+3| 2         |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=0 yi=2 to xf=1 yf=2
+
+Current player: 2
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1|     1   1 |
+2|   2     1 |
+3| 2         |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=2 yi=0 to xf=2 yf=1
+
+Current player: 1
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1|         1 |
+2|   1     1 |
+3| 2         |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=1 yi=2 to xf=2 yf=1
+
+Current player: 1
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1| 2       1 |
+2|   1     1 |
+3| 2         |
+4| G 2 2   - |
+  -----------
+placed back the captured pawn on x=1 y=0
+
+Current player: 2
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1| 2       1 |
+2| 2 1     1 |
+3|           |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=3 yi=0 to xf=2 yf=0
+
+Current player: 1
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1| 2       1 |
+2| 2       1 |
+3|   1       |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=2 yi=1 to xf=3 yf=1
+
+Current player: 2
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1| 2       1 |
+2|   2     1 |
+3|   1       |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=2 yi=0 to xf=2 yf=1
+
+Current player: 1
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1| 2       1 |
+2|   2     1 |
+3| 1         |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=3 yi=1 to xf=3 yf=0
+
+Current player: 2
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1| 2       1 |
+2|     2   1 |
+3| 1         |
+4| G 2 2   - |
+  -----------
+pawn was moved from xi=2 yi=1 to xf=2 yf=2
+
+Current player: 1
+   0 1 2 3 4
+  -----------
+0| -     1 G |
+1| 2       1 |
+2|     2   1 |
+3|           |
+4| 1 2 2   - |
+  -----------
+pawn was moved from xi=3 yi=0 to xf=4 yf=0
+
+GAME OVER!
+Congratulations Player 1

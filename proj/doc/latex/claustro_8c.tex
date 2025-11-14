@@ -1,0 +1,650 @@
+\doxysection{claustro.\+c File Reference}
+\hypertarget{claustro_8c}{}\label{claustro_8c}\index{claustro.c@{claustro.c}}
+{\ttfamily \#include "{}claustro.\+h"{}}\newline
+Include dependency graph for claustro.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{claustro_8c_adcd74acd09c60f59b71f5f8e077fe44b}{setup\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa a matriz board (representação interna do tabuleiro) com os valores que reprensentam o disposição das peças no início do jogo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a6f31a24fe416c9ce9259ce11ea23a1f1}{print\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Imprime o jogador atual e o tabuleiro na consola. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_aa91befec91085c4e80aeeaf4c8a7a151}{update\+\_\+pawn\+\_\+move}} (int \texorpdfstring{$\ast$}{*}pawn\+\_\+move\+\_\+pos, bool add\+\_\+or\+\_\+sub)
+\begin{DoxyCompactList}\small\item\em Incrementa/decrementa uma unidade à váriável passada por argumento que representa um campo da struct \doxylink{struct_move}{Move}. Esta função é invocada quando o utilizador prime as teclas W,A,S,D. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_a88a97139ed295288b6fa3c73790413ea}{find\+\_\+board\+\_\+cell}} (int16\+\_\+t position)
+\begin{DoxyCompactList}\small\item\em Dada a posição x ou y do rato no ecrã, calcula a abscissa/ordenada no tabuleiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_a2748d2f3776b396f0b5e9c2fa1ea052f}{move}} (uint8\+\_\+t xi, uint8\+\_\+t yi, uint8\+\_\+t xf, uint8\+\_\+t yf)
+\begin{DoxyCompactList}\small\item\em Valida e executa uma jogada, movendo a peça de (xi, yi) para (xf, yf). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_acf9287683f8b2181ed6d35bb57733c79}{can\+\_\+move}} (uint8\+\_\+t player, uint8\+\_\+t xi, uint8\+\_\+t yi, uint8\+\_\+t xf, uint8\+\_\+t yf)
+\begin{DoxyCompactList}\small\item\em Valida uma jogada de acordo com as regras do Claustro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_af55820e3bb93fd80447fa8d0d93ebdc3}{can\+\_\+pick}} (uint8\+\_\+t x, uint8\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Verifica se a peça em (x,y) pertence ao jogador atual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a80def28072b711eccc7a4c06dd83eb75}{set\+\_\+pawn}} (uint8\+\_\+t pawn, uint8\+\_\+t x, uint8\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Coloca/retira uma peça do tabuleiro em (x,y). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_a837afae612ab07499500b4c2b3a034f1}{place\+\_\+back}} (uint8\+\_\+t x, uint8\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Coloca a peça capturada no tabuleiro em (x,y), verificando se essa posição está EMPTY. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_ae1a2e26afd9fddd52abd9795800fbfab}{game\+\_\+over}} ()
+\begin{DoxyCompactList}\small\item\em Avalia um tabuleiro e verifica se há um vencedor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_aee833f0e330755c1d7010841d8118b50}{valid\+\_\+move}} (uint8\+\_\+t player)
+\begin{DoxyCompactList}\small\item\em Verifica se o jogador passado como argumento tem pelo menos uma jogada válida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_ac5342c02dc0b6fb2730106f6466be324}{swap\+\_\+player}} ()
+\begin{DoxyCompactList}\small\item\em Troca os jogadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a964c3d899a3e721e68ea4d0e3fe2e6f4}{update\+\_\+state\+\_\+machine}} ()
+\begin{DoxyCompactList}\small\item\em Atualiza o estado do jogo de acordo com os eventos do rato/teclado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a7e7afd13ee4e35491b01ba9591ba1576}{create\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Cria todos os sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932}{destroy\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Destroi todos os sprites. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_aa6a495a94944bda567df909f84c62396}{draw\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Desenha o tabuleiro (e as peças) de acordo com o modo atual (escuro ou claro). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_a4f8333680932a3601be7afd102870efd}{draw\+\_\+pawns}} ()
+\begin{DoxyCompactList}\small\item\em Desenha as peças. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a15a6fe2679b120f3f3e3c2bd5bdb2405}{draw\+\_\+valid\+\_\+moves}} ()
+\begin{DoxyCompactList}\small\item\em Desenha os destinos/jogadas possíveis para uma peça quando o cursor está por cima da mesma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_aa60deb7a9ca9f0d6be6d1e430f54c56b}{draw\+\_\+side\+\_\+info}} ()
+\begin{DoxyCompactList}\small\item\em Desenha informação complementar ao tabuleiro\+: jogador atual e associação entre as peças e o jogador. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_a3aea86648e314a44bf244bf4c0e8b347}{draw\+\_\+mouse\+\_\+pointer}} ()
+\begin{DoxyCompactList}\small\item\em Desenha o cursor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a83361e027b6f0dd917305f1f82dedda3}{draw\+\_\+main\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Desenha o menu principal, incluido os botões PLAY e QUIT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a3ff01944c06d2fdd90b25d38513516ac}{draw\+\_\+game\+\_\+over\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Desenha o menu final, incluido os botões PLAY e QUIT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{claustro_8c_a8f7acda4de2ff9ede5fca68d2db09959}{draw\+\_\+frame}} ()
+\begin{DoxyCompactList}\small\item\em Desenha uma frame de acordo com o estado do jogo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_ad298944b3db0ec284b74bd35a59280aa}{clicked\+\_\+play\+\_\+button}} ()
+\begin{DoxyCompactList}\small\item\em Verifica se o botão PLAY foi clicado pelo rato. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{claustro_8c_a2ce96491758e5ff45076c803ef28a42d}{clicked\+\_\+quit\+\_\+button}} ()
+\begin{DoxyCompactList}\small\item\em Verifica se o botão QUIT foi clicado pelo rato. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{claustro_8c_a18835e53ce582638a8a8498c84a0a4c1}{dark\+\_\+mode}} = false
+\item 
+\mbox{\hyperlink{struct_move}{Move}} \mbox{\hyperlink{claustro_8c_a05824cbfb626538a82c52c1e76f91509}{pawn\+\_\+move}} = \{2, 2, 0, 0\}
+\item 
+\mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} \mbox{\hyperlink{claustro_8c_ab8c8a2816ae974e5a2df22ec1e87fa51}{game\+\_\+state}}
+\item 
+\mbox{\hyperlink{struct_mouse_state}{Mouse\+State}} \mbox{\hyperlink{claustro_8c_a6c763e8ec36413ff97e432f58d84a804}{mouse\+\_\+state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{claustro_8c_acf9287683f8b2181ed6d35bb57733c79}\index{claustro.c@{claustro.c}!can\_move@{can\_move}}
+\index{can\_move@{can\_move}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{can\_move()}{can\_move()}}
+{\footnotesize\ttfamily \label{claustro_8c_acf9287683f8b2181ed6d35bb57733c79} 
+int can\+\_\+move (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{player}{, }\item[{uint8\+\_\+t}]{xi}{, }\item[{uint8\+\_\+t}]{yi}{, }\item[{uint8\+\_\+t}]{xf}{, }\item[{uint8\+\_\+t}]{yf}{}\end{DoxyParamCaption})}
+
+
+
+Valida uma jogada de acordo com as regras do Claustro. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_acf9287683f8b2181ed6d35bb57733c79_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_af55820e3bb93fd80447fa8d0d93ebdc3}\index{claustro.c@{claustro.c}!can\_pick@{can\_pick}}
+\index{can\_pick@{can\_pick}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{can\_pick()}{can\_pick()}}
+{\footnotesize\ttfamily \label{claustro_8c_af55820e3bb93fd80447fa8d0d93ebdc3} 
+int can\+\_\+pick (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x}{, }\item[{uint8\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se a peça em (x,y) pertence ao jogador atual. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_af55820e3bb93fd80447fa8d0d93ebdc3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_ad298944b3db0ec284b74bd35a59280aa}\index{claustro.c@{claustro.c}!clicked\_play\_button@{clicked\_play\_button}}
+\index{clicked\_play\_button@{clicked\_play\_button}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{clicked\_play\_button()}{clicked\_play\_button()}}
+{\footnotesize\ttfamily \label{claustro_8c_ad298944b3db0ec284b74bd35a59280aa} 
+int clicked\+\_\+play\+\_\+button (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se o botão PLAY foi clicado pelo rato. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_ad298944b3db0ec284b74bd35a59280aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a2ce96491758e5ff45076c803ef28a42d}\index{claustro.c@{claustro.c}!clicked\_quit\_button@{clicked\_quit\_button}}
+\index{clicked\_quit\_button@{clicked\_quit\_button}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{clicked\_quit\_button()}{clicked\_quit\_button()}}
+{\footnotesize\ttfamily \label{claustro_8c_a2ce96491758e5ff45076c803ef28a42d} 
+int clicked\+\_\+quit\+\_\+button (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se o botão QUIT foi clicado pelo rato. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a2ce96491758e5ff45076c803ef28a42d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a7e7afd13ee4e35491b01ba9591ba1576}\index{claustro.c@{claustro.c}!create\_sprites@{create\_sprites}}
+\index{create\_sprites@{create\_sprites}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{create\_sprites()}{create\_sprites()}}
+{\footnotesize\ttfamily \label{claustro_8c_a7e7afd13ee4e35491b01ba9591ba1576} 
+void create\+\_\+sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Cria todos os sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{claustro_8c_a7e7afd13ee4e35491b01ba9591ba1576_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{claustro_8c_a7e7afd13ee4e35491b01ba9591ba1576_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932}\index{claustro.c@{claustro.c}!destroy\_sprites@{destroy\_sprites}}
+\index{destroy\_sprites@{destroy\_sprites}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprites()}{destroy\_sprites()}}
+{\footnotesize\ttfamily \label{claustro_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932} 
+void destroy\+\_\+sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destroi todos os sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{claustro_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{claustro_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_aa6a495a94944bda567df909f84c62396}\index{claustro.c@{claustro.c}!draw\_board@{draw\_board}}
+\index{draw\_board@{draw\_board}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_board()}{draw\_board()}}
+{\footnotesize\ttfamily \label{claustro_8c_aa6a495a94944bda567df909f84c62396} 
+int draw\+\_\+board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha o tabuleiro (e as peças) de acordo com o modo atual (escuro ou claro). 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_aa6a495a94944bda567df909f84c62396_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_aa6a495a94944bda567df909f84c62396_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a8f7acda4de2ff9ede5fca68d2db09959}\index{claustro.c@{claustro.c}!draw\_frame@{draw\_frame}}
+\index{draw\_frame@{draw\_frame}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_frame()}{draw\_frame()}}
+{\footnotesize\ttfamily \label{claustro_8c_a8f7acda4de2ff9ede5fca68d2db09959} 
+void draw\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha uma frame de acordo com o estado do jogo. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a8f7acda4de2ff9ede5fca68d2db09959_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a8f7acda4de2ff9ede5fca68d2db09959_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a3ff01944c06d2fdd90b25d38513516ac}\index{claustro.c@{claustro.c}!draw\_game\_over\_menu@{draw\_game\_over\_menu}}
+\index{draw\_game\_over\_menu@{draw\_game\_over\_menu}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_game\_over\_menu()}{draw\_game\_over\_menu()}}
+{\footnotesize\ttfamily \label{claustro_8c_a3ff01944c06d2fdd90b25d38513516ac} 
+void draw\+\_\+game\+\_\+over\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha o menu final, incluido os botões PLAY e QUIT. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a3ff01944c06d2fdd90b25d38513516ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a3ff01944c06d2fdd90b25d38513516ac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a83361e027b6f0dd917305f1f82dedda3}\index{claustro.c@{claustro.c}!draw\_main\_menu@{draw\_main\_menu}}
+\index{draw\_main\_menu@{draw\_main\_menu}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_main\_menu()}{draw\_main\_menu()}}
+{\footnotesize\ttfamily \label{claustro_8c_a83361e027b6f0dd917305f1f82dedda3} 
+void draw\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha o menu principal, incluido os botões PLAY e QUIT. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a83361e027b6f0dd917305f1f82dedda3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a83361e027b6f0dd917305f1f82dedda3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a3aea86648e314a44bf244bf4c0e8b347}\index{claustro.c@{claustro.c}!draw\_mouse\_pointer@{draw\_mouse\_pointer}}
+\index{draw\_mouse\_pointer@{draw\_mouse\_pointer}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_mouse\_pointer()}{draw\_mouse\_pointer()}}
+{\footnotesize\ttfamily \label{claustro_8c_a3aea86648e314a44bf244bf4c0e8b347} 
+int draw\+\_\+mouse\+\_\+pointer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha o cursor. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a3aea86648e314a44bf244bf4c0e8b347_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a3aea86648e314a44bf244bf4c0e8b347_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a4f8333680932a3601be7afd102870efd}\index{claustro.c@{claustro.c}!draw\_pawns@{draw\_pawns}}
+\index{draw\_pawns@{draw\_pawns}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_pawns()}{draw\_pawns()}}
+{\footnotesize\ttfamily \label{claustro_8c_a4f8333680932a3601be7afd102870efd} 
+int draw\+\_\+pawns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha as peças. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a4f8333680932a3601be7afd102870efd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a4f8333680932a3601be7afd102870efd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_aa60deb7a9ca9f0d6be6d1e430f54c56b}\index{claustro.c@{claustro.c}!draw\_side\_info@{draw\_side\_info}}
+\index{draw\_side\_info@{draw\_side\_info}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_side\_info()}{draw\_side\_info()}}
+{\footnotesize\ttfamily \label{claustro_8c_aa60deb7a9ca9f0d6be6d1e430f54c56b} 
+int draw\+\_\+side\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha informação complementar ao tabuleiro\+: jogador atual e associação entre as peças e o jogador. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_aa60deb7a9ca9f0d6be6d1e430f54c56b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_aa60deb7a9ca9f0d6be6d1e430f54c56b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a15a6fe2679b120f3f3e3c2bd5bdb2405}\index{claustro.c@{claustro.c}!draw\_valid\_moves@{draw\_valid\_moves}}
+\index{draw\_valid\_moves@{draw\_valid\_moves}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{draw\_valid\_moves()}{draw\_valid\_moves()}}
+{\footnotesize\ttfamily \label{claustro_8c_a15a6fe2679b120f3f3e3c2bd5bdb2405} 
+void draw\+\_\+valid\+\_\+moves (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Desenha os destinos/jogadas possíveis para uma peça quando o cursor está por cima da mesma. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a15a6fe2679b120f3f3e3c2bd5bdb2405_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a15a6fe2679b120f3f3e3c2bd5bdb2405_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a88a97139ed295288b6fa3c73790413ea}\index{claustro.c@{claustro.c}!find\_board\_cell@{find\_board\_cell}}
+\index{find\_board\_cell@{find\_board\_cell}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{find\_board\_cell()}{find\_board\_cell()}}
+{\footnotesize\ttfamily \label{claustro_8c_a88a97139ed295288b6fa3c73790413ea} 
+int find\+\_\+board\+\_\+cell (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Dada a posição x ou y do rato no ecrã, calcula a abscissa/ordenada no tabuleiro. 
+
+\begin{DoxyReturn}{Returns}
+valor entre 0 e BOARD\+\_\+\+SIZE. BOARD\+\_\+\+SIZE representa um valor fora do tabuleiro 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a88a97139ed295288b6fa3c73790413ea_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_ae1a2e26afd9fddd52abd9795800fbfab}\index{claustro.c@{claustro.c}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{game\_over()}{game\_over()}}
+{\footnotesize\ttfamily \label{claustro_8c_ae1a2e26afd9fddd52abd9795800fbfab} 
+int game\+\_\+over (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Avalia um tabuleiro e verifica se há um vencedor. 
+
+\begin{DoxyReturn}{Returns}
+PLAYER 1, PLAYER2 ou 0 casa não haja vencedor 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{claustro_8c_ae1a2e26afd9fddd52abd9795800fbfab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_ae1a2e26afd9fddd52abd9795800fbfab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a2748d2f3776b396f0b5e9c2fa1ea052f}\index{claustro.c@{claustro.c}!move@{move}}
+\index{move@{move}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{claustro_8c_a2748d2f3776b396f0b5e9c2fa1ea052f} 
+int move (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{xi}{, }\item[{uint8\+\_\+t}]{yi}{, }\item[{uint8\+\_\+t}]{xf}{, }\item[{uint8\+\_\+t}]{yf}{}\end{DoxyParamCaption})}
+
+
+
+Valida e executa uma jogada, movendo a peça de (xi, yi) para (xf, yf). 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{claustro_8c_a2748d2f3776b396f0b5e9c2fa1ea052f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a2748d2f3776b396f0b5e9c2fa1ea052f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a837afae612ab07499500b4c2b3a034f1}\index{claustro.c@{claustro.c}!place\_back@{place\_back}}
+\index{place\_back@{place\_back}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{place\_back()}{place\_back()}}
+{\footnotesize\ttfamily \label{claustro_8c_a837afae612ab07499500b4c2b3a034f1} 
+int place\+\_\+back (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x}{, }\item[{uint8\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Coloca a peça capturada no tabuleiro em (x,y), verificando se essa posição está EMPTY. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{claustro_8c_a837afae612ab07499500b4c2b3a034f1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a837afae612ab07499500b4c2b3a034f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a6f31a24fe416c9ce9259ce11ea23a1f1}\index{claustro.c@{claustro.c}!print\_board@{print\_board}}
+\index{print\_board@{print\_board}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{print\_board()}{print\_board()}}
+{\footnotesize\ttfamily \label{claustro_8c_a6f31a24fe416c9ce9259ce11ea23a1f1} 
+void print\+\_\+board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Imprime o jogador atual e o tabuleiro na consola. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a6f31a24fe416c9ce9259ce11ea23a1f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a80def28072b711eccc7a4c06dd83eb75}\index{claustro.c@{claustro.c}!set\_pawn@{set\_pawn}}
+\index{set\_pawn@{set\_pawn}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{set\_pawn()}{set\_pawn()}}
+{\footnotesize\ttfamily \label{claustro_8c_a80def28072b711eccc7a4c06dd83eb75} 
+void set\+\_\+pawn (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pawn}{, }\item[{uint8\+\_\+t}]{x}{, }\item[{uint8\+\_\+t}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Coloca/retira uma peça do tabuleiro em (x,y). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pawn} & PLAYER1, PLAYER2 ou EMPTY \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a80def28072b711eccc7a4c06dd83eb75_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_adcd74acd09c60f59b71f5f8e077fe44b}\index{claustro.c@{claustro.c}!setup\_board@{setup\_board}}
+\index{setup\_board@{setup\_board}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{setup\_board()}{setup\_board()}}
+{\footnotesize\ttfamily \label{claustro_8c_adcd74acd09c60f59b71f5f8e077fe44b} 
+void setup\+\_\+board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa a matriz board (representação interna do tabuleiro) com os valores que reprensentam o disposição das peças no início do jogo. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_adcd74acd09c60f59b71f5f8e077fe44b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_ac5342c02dc0b6fb2730106f6466be324}\index{claustro.c@{claustro.c}!swap\_player@{swap\_player}}
+\index{swap\_player@{swap\_player}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{swap\_player()}{swap\_player()}}
+{\footnotesize\ttfamily \label{claustro_8c_ac5342c02dc0b6fb2730106f6466be324} 
+void swap\+\_\+player (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Troca os jogadores. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_ac5342c02dc0b6fb2730106f6466be324_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_aa91befec91085c4e80aeeaf4c8a7a151}\index{claustro.c@{claustro.c}!update\_pawn\_move@{update\_pawn\_move}}
+\index{update\_pawn\_move@{update\_pawn\_move}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{update\_pawn\_move()}{update\_pawn\_move()}}
+{\footnotesize\ttfamily \label{claustro_8c_aa91befec91085c4e80aeeaf4c8a7a151} 
+void update\+\_\+pawn\+\_\+move (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{pawn\+\_\+move\+\_\+pos}{, }\item[{bool}]{add\+\_\+or\+\_\+sub}{}\end{DoxyParamCaption})}
+
+
+
+Incrementa/decrementa uma unidade à váriável passada por argumento que representa um campo da struct \doxylink{struct_move}{Move}. Esta função é invocada quando o utilizador prime as teclas W,A,S,D. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em add\+\_\+or\+\_\+sub} & se verdadeiro incrementa, caso contrário decrementa \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_aa91befec91085c4e80aeeaf4c8a7a151_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_a964c3d899a3e721e68ea4d0e3fe2e6f4}\index{claustro.c@{claustro.c}!update\_state\_machine@{update\_state\_machine}}
+\index{update\_state\_machine@{update\_state\_machine}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{update\_state\_machine()}{update\_state\_machine()}}
+{\footnotesize\ttfamily \label{claustro_8c_a964c3d899a3e721e68ea4d0e3fe2e6f4} 
+void update\+\_\+state\+\_\+machine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza o estado do jogo de acordo com os eventos do rato/teclado. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a964c3d899a3e721e68ea4d0e3fe2e6f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_a964c3d899a3e721e68ea4d0e3fe2e6f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{claustro_8c_aee833f0e330755c1d7010841d8118b50}\index{claustro.c@{claustro.c}!valid\_move@{valid\_move}}
+\index{valid\_move@{valid\_move}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{valid\_move()}{valid\_move()}}
+{\footnotesize\ttfamily \label{claustro_8c_aee833f0e330755c1d7010841d8118b50} 
+int valid\+\_\+move (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{player}{}\end{DoxyParamCaption})}
+
+
+
+Verifica se o jogador passado como argumento tem pelo menos uma jogada válida. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{claustro_8c_aee833f0e330755c1d7010841d8118b50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{claustro_8c_aee833f0e330755c1d7010841d8118b50_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{claustro_8c_a18835e53ce582638a8a8498c84a0a4c1}\index{claustro.c@{claustro.c}!dark\_mode@{dark\_mode}}
+\index{dark\_mode@{dark\_mode}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{dark\_mode}{dark\_mode}}
+{\footnotesize\ttfamily \label{claustro_8c_a18835e53ce582638a8a8498c84a0a4c1} 
+bool dark\+\_\+mode = false}
+
+\Hypertarget{claustro_8c_ab8c8a2816ae974e5a2df22ec1e87fa51}\index{claustro.c@{claustro.c}!game\_state@{game\_state}}
+\index{game\_state@{game\_state}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{game\_state}{game\_state}}
+{\footnotesize\ttfamily \label{claustro_8c_ab8c8a2816ae974e5a2df22ec1e87fa51} 
+\mbox{\hyperlink{action_8h_a7899b65f1ea0f655e4bbf8d2a5714285}{Game\+State}} game\+\_\+state\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{claustro_8c_a6c763e8ec36413ff97e432f58d84a804}\index{claustro.c@{claustro.c}!mouse\_state@{mouse\_state}}
+\index{mouse\_state@{mouse\_state}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_state}{mouse\_state}}
+{\footnotesize\ttfamily \label{claustro_8c_a6c763e8ec36413ff97e432f58d84a804} 
+\mbox{\hyperlink{struct_mouse_state}{Mouse\+State}} mouse\+\_\+state\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{claustro_8c_a05824cbfb626538a82c52c1e76f91509}\index{claustro.c@{claustro.c}!pawn\_move@{pawn\_move}}
+\index{pawn\_move@{pawn\_move}!claustro.c@{claustro.c}}
+\doxysubsubsection{\texorpdfstring{pawn\_move}{pawn\_move}}
+{\footnotesize\ttfamily \label{claustro_8c_a05824cbfb626538a82c52c1e76f91509} 
+\mbox{\hyperlink{struct_move}{Move}} pawn\+\_\+move = \{2, 2, 0, 0\}}
+

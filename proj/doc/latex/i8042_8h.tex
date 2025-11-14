@@ -1,0 +1,96 @@
+\doxysection{i8042.\+h File Reference}
+\hypertarget{i8042_8h}{}\label{i8042_8h}\index{i8042.h@{i8042.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for i8042.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{i8042_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{i8042_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga1a522aa19bcb695a9df30032a893bee3}{DELAY\+\_\+\+US}}~20000
+\item 
+\#define \mbox{\hyperlink{group__i8042_gac6b47609a951e77244ef2be1691c298a}{BREAK\+\_\+\+CODE}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga9a86f4f038ce85ff0308b0674a6849f2}{TWO\+\_\+\+BYTE\+\_\+\+SCANCODE}}~0xe0
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga592dfdf397b21913348b4dd6b7759b2d}{ESC\+\_\+\+BREAK\+\_\+\+CODE}}~0x81
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga45fda238c36661e22a2bda60110aed09}{W\+\_\+\+BREAK\+\_\+\+CODE}}~0x91
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga6b3bc710b60263bd76130540a24b74b6}{A\+\_\+\+BREAK\+\_\+\+CODE}}~0x9e
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaec37aea52a2989fbb1da1f848206997e}{S\+\_\+\+BREAK\+\_\+\+CODE}}~0x9f
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaeb7fb0b62eabc29ca24eb9ce77b07152}{D\+\_\+\+BREAK\+\_\+\+CODE}}~0xa0
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga54db80d887c9139084b1a66243fa3f72}{ENTER\+\_\+\+BREAK\+\_\+\+CODE}}~0x9c
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga5c1072213ce8d8cd43628c4319ae0391}{KBD\+\_\+\+IRQ}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga85964cb90343bb1a029b1d1b4229f910}{MOUSE\+\_\+\+IRQ}}~12
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga34b14687d83496940a236351fbbb1aea}{KBC\+\_\+\+STAT\+\_\+\+REG}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga82a39176e42fe8f48025521b9674cdc6}{KBC\+\_\+\+PARITY}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga34599ca5c55cb9be3b235d7422aff45c}{KBC\+\_\+\+TIMEOUT}}~BIT(6)
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaaa796d09d1e94025da456738295342f2}{KBC\+\_\+\+AUX}}~BIT(5)
+\item 
+\#define \mbox{\hyperlink{group__i8042_gac1649d41f8ba9a02fa70ec4e600d5e4a}{KBC\+\_\+\+IBF}}~BIT(1)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga36930de8a703505c95fe133095dcfe06}{KBC\+\_\+\+OBF}}~BIT(0)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga19b698bdf2e0783e04e17153b49128bd}{KBC\+\_\+\+IN\+\_\+\+BUF\+\_\+\+CMD}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga00cbd58d261ca6008b44d81c57ca5c0f}{KBC\+\_\+\+IN\+\_\+\+BUF\+\_\+\+CMD\+\_\+\+ARGS}}~0x60
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga1ccde68b2b6d4e45b50eef1403e10bb7}{KBC\+\_\+\+OUT\+\_\+\+BUF}}~0x60
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga3ec5be9258e9575a62a5054d1b23ccca}{KBC\+\_\+\+CMD\+\_\+\+BYTE\+\_\+\+INT}}~BIT(0)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga6d601a5e8b566f117509728cc743f6b5}{KBC\+\_\+\+CMD\+\_\+\+BYTE\+\_\+\+INT2}}~BIT(1)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga7442f41e676511f84b2a4e83b482214d}{KBC\+\_\+\+CMD\+\_\+\+READ\+\_\+\+CMD\+\_\+\+BYTE}}~0x20
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaaa999f4b523563be4834a828521537e3}{KBC\+\_\+\+CMD\+\_\+\+WRITE\+\_\+\+CMD\+\_\+\+BYTE}}~0x60
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga2be97f7a4544974e865b30ee096b2f92}{KBC\+\_\+\+CMD\+\_\+\+WRITE\+\_\+\+BYTE\+\_\+\+TO\+\_\+\+MOUSE}}~0xd4
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga841cebcb7d56f8cc3505c202865f3dc2}{MOUSE\+\_\+\+DISABLE\+\_\+\+DATA\+\_\+\+REPORTING}}~0xf5
+\item 
+\#define \mbox{\hyperlink{group__i8042_gab9680a69d58165012e6b3c102d6cec69}{MOUSE\+\_\+\+ENABLE\+\_\+\+DATA\+\_\+\+REPORTING}}~0xf4
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga064ec583ce5b039303686ce4c64b4f3e}{MOUSE\+\_\+\+ACK}}~0xfa
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaef4a299dedf83b6dc4765baab230affd}{MOUSE\+\_\+\+NACK}}~0xfe
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga75ebb9e8d0615febfa6c7c96ad48a38b}{MOUSE\+\_\+\+ERROR}}~0xfc
+\item 
+\#define \mbox{\hyperlink{group__i8042_gab2ced9b172edde2124913307c5a123ff}{MOUSE\+\_\+\+PACKET\+\_\+\+Y\+\_\+\+OVFL}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaf74131d8a39344b0f1d3f5f25e4bf5cc}{MOUSE\+\_\+\+PACKET\+\_\+\+X\+\_\+\+OVFL}}~BIT(6)
+\item 
+\#define \mbox{\hyperlink{group__i8042_gac7a00bfae67dd745f674fb2e7d7f4cd2}{MOUSE\+\_\+\+PACKET\+\_\+\+MSB\+\_\+\+Y\+\_\+\+DELTA}}~BIT(5)
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaa19a9c19468d04a3e505f08b2ceb9cb3}{MOUSE\+\_\+\+PACKET\+\_\+\+MSB\+\_\+\+X\+\_\+\+DELTA}}~BIT(4)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga928fc1dcfa5011daa5c1f3690b97e74f}{MOUSE\+\_\+\+PACKET\+\_\+\+FIRST\+\_\+\+BYTE}}~BIT(3)
+\item 
+\#define \mbox{\hyperlink{group__i8042_gac06490ee764b5e241cc6dc67a2789b2d}{MOUSE\+\_\+\+PACKET\+\_\+\+MB}}~BIT(2)
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga71367937a3e5c80d51a58463df5bd2c3}{MOUSE\+\_\+\+PACKET\+\_\+\+RB}}~BIT(1)
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaca8aa45c70d767a5118dd8085c525e6d}{MOUSE\+\_\+\+PACKET\+\_\+\+LB}}~BIT(0)
+\end{DoxyCompactItemize}

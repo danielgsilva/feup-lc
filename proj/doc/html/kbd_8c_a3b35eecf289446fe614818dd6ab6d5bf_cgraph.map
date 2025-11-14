@@ -1,0 +1,10 @@
+<map id="kbd_ih" name="kbd_ih">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,65,56"/>
+<area shape="rect" id="Node000002" href="$kbc_8c.html#a509b500a9d7161931e4f5a907cfe91c0" title="Lê o output buffer. Caso haja algum erro na comunicação ou dados inesperados, descarta esse valor." alt="" coords="113,31,237,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,41,97,41,97,46,65,46"/>
+<area shape="rect" id="Node000003" href="$kbc_8c.html#a2f901acc7ec2e88efa1f7eb391832e67" title="Lê o status register." alt="" coords="285,5,395,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="237,31,269,26,270,32,238,37"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title=" " alt="" coords="443,31,534,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="238,41,428,41,428,46,238,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="396,25,428,31,427,36,395,30"/>
+</map>

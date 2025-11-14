@@ -1,0 +1,57 @@
+\doxysection{i8042.\+h}
+\hypertarget{i8042_8h_source}{}\label{i8042_8h_source}\mbox{\hyperlink{i8042_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_LCOM\_I8042\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <lcom/lcf.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ DELAY\_US\ 20000}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ BREAK\_CODE\ BIT(7)\ \ \ \ \ \ }\textcolor{comment}{//\ The\ break\ code\ of\ a\ key\ differs\ from\ the\ make\ code\ of\ that\ key\ on\ the\ MSB}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ TWO\_BYTE\_SCANCODE\ 0xe0\ }\textcolor{comment}{//\ Two-\/byte\ long\ scancodes\ usually\ use\ 0xE0\ as\ their\ first\ byte}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ESC\_BREAK\_CODE\ 0x81}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ W\_BREAK\_CODE\ 0x91}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ A\_BREAK\_CODE\ 0x9e}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ S\_BREAK\_CODE\ 0x9f}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ D\_BREAK\_CODE\ 0xa0}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ ENTER\_BREAK\_CODE\ 0x9c}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ KBD\_IRQ\ 1}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ MOUSE\_IRQ\ 12}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ KBC\_STAT\_REG\ 0x64}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ KBC\_PARITY\ BIT(7)}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ KBC\_TIMEOUT\ BIT(6)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ KBC\_AUX\ BIT(5)\ }\textcolor{comment}{//\ mouse\ data}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ KBC\_IBF\ BIT(1)}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ KBC\_OBF\ BIT(0)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ KBC\_IN\_BUF\_CMD\ 0x64}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ KBC\_IN\_BUF\_CMD\_ARGS\ 0x60}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ KBC\_OUT\_BUF\ 0x60}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ KBC\_CMD\_BYTE\_INT\ BIT(0)\ \ }\textcolor{comment}{//\ enable\ interrupt\ on\ OBF,\ from\ keyboard}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ KBC\_CMD\_BYTE\_INT2\ BIT(1)\ }\textcolor{comment}{//\ enable\ interrupt\ on\ OBF,\ from\ mouse}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ KBC\_CMD\_READ\_CMD\_BYTE\ 0x20}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ KBC\_CMD\_WRITE\_CMD\_BYTE\ 0x60}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ KBC\_CMD\_WRITE\_BYTE\_TO\_MOUSE\ 0xd4}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ MOUSE\_DISABLE\_DATA\_REPORTING\ 0xf5}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ MOUSE\_ENABLE\_DATA\_REPORTING\ 0xf4}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ MOUSE\_ACK\ 0xfa}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ MOUSE\_NACK\ 0xfe}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ MOUSE\_ERROR\ 0xfc}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_Y\_OVFL\ BIT(7)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_X\_OVFL\ BIT(6)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_MSB\_Y\_DELTA\ BIT(5)}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_MSB\_X\_DELTA\ BIT(4)}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_FIRST\_BYTE\ BIT(3)}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_MB\ BIT(2)}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_RB\ BIT(1)}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ MOUSE\_PACKET\_LB\ BIT(0)}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ \_LCOM\_I8042\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,12 @@
+<map id="video.h" name="video.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="61,5,124,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8h.html" title=" " alt="" coords="60,79,125,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,31,86,64,81,63,83,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,84,178"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="82,33,65,54,51,80,45,109,44,137,39,137,40,108,46,78,61,51,78,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="119,153,183,178"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="106,30,123,51,139,78,148,108,152,137,147,137,143,109,134,80,119,54,102,33"/>
+<area shape="poly" id="edge3_Node000002_Node000001" title=" " alt="" coords="97,78,99,46,104,46,102,79"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,106,63,141,59,138,82,103"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="104,103,134,139,130,142,100,107"/>
+</map>

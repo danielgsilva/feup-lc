@@ -1,0 +1,7 @@
+<map id="draw_side_info" name="draw_side_info">
+<area shape="rect" id="Node000001" title="Desenha informação complementar ao tabuleiro: jogador atual e associação entre as peças e o jogador." alt="" coords="5,5,114,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a6c75fbf31230126d2f19b29deaf24b2f" title=" " alt="" coords="162,5,250,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,16,146,16,146,21,114,21"/>
+<area shape="rect" id="Node000003" href="$video_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title=" " alt="" coords="298,5,402,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,16,282,16,282,21,250,21"/>
+</map>

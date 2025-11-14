@@ -1,0 +1,7 @@
+<map id="draw_mouse_pointer" name="draw_mouse_pointer">
+<area shape="rect" id="Node000001" title="Desenha o cursor." alt="" coords="5,5,147,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a6c75fbf31230126d2f19b29deaf24b2f" title=" " alt="" coords="195,5,283,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,179,16,179,21,147,21"/>
+<area shape="rect" id="Node000003" href="$video_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title=" " alt="" coords="331,5,435,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,16,315,16,315,21,283,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="valid_move" name="valid_move">
+<area shape="rect" id="Node000001" title="Verifica se o jogador passado como argumento tem pelo menos uma jogada válida." alt="" coords="5,5,93,31"/>
+<area shape="rect" id="Node000002" href="$claustro_8c.html#acf9287683f8b2181ed6d35bb57733c79" title="Valida uma jogada de acordo com as regras do Claustro." alt="" coords="141,5,222,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,16,125,16,125,21,93,21"/>
+</map>

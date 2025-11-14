@@ -1,0 +1,121 @@
+\doxysection{kbc.\+h File Reference}
+\hypertarget{kbc_8h}{}\label{kbc_8h}\index{kbc.h@{kbc.h}}
+{\ttfamily \#include "{}i8042.\+h"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for kbc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{kbc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{kbc_8h_a2f901acc7ec2e88efa1f7eb391832e67}{kbc\+\_\+get\+\_\+status}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}st)
+\begin{DoxyCompactList}\small\item\em Lê o status register. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{kbc_8h_a509b500a9d7161931e4f5a907cfe91c0}{kbc\+\_\+read\+\_\+out\+\_\+buf}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, bool kbc\+\_\+aux)
+\begin{DoxyCompactList}\small\item\em Lê o output buffer. Caso haja algum erro na comunicação ou dados inesperados, descarta esse valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{kbc_8h_a6b935373e0296367ab2c5d7c2efd3245}{kbc\+\_\+write\+\_\+command}} (int port, uint8\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em Envia um comando ao KBC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{kbc_8h_a2f901acc7ec2e88efa1f7eb391832e67}\index{kbc.h@{kbc.h}!kbc\_get\_status@{kbc\_get\_status}}
+\index{kbc\_get\_status@{kbc\_get\_status}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_get\_status()}{kbc\_get\_status()}}
+{\footnotesize\ttfamily \label{kbc_8h_a2f901acc7ec2e88efa1f7eb391832e67} 
+int kbc\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{st}{}\end{DoxyParamCaption})}
+
+
+
+Lê o status register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & endereço de memória que será preenchido com o valor do registo \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{kbc_8h_a2f901acc7ec2e88efa1f7eb391832e67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_a2f901acc7ec2e88efa1f7eb391832e67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbc_8h_a509b500a9d7161931e4f5a907cfe91c0}\index{kbc.h@{kbc.h}!kbc\_read\_out\_buf@{kbc\_read\_out\_buf}}
+\index{kbc\_read\_out\_buf@{kbc\_read\_out\_buf}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_read\_out\_buf()}{kbc\_read\_out\_buf()}}
+{\footnotesize\ttfamily \label{kbc_8h_a509b500a9d7161931e4f5a907cfe91c0} 
+int kbc\+\_\+read\+\_\+out\+\_\+buf (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{bool}]{kbc\+\_\+aux}{}\end{DoxyParamCaption})}
+
+
+
+Lê o output buffer. Caso haja algum erro na comunicação ou dados inesperados, descarta esse valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kbc\+\_\+aux} & If kbc\+\_\+aux = 0 =\texorpdfstring{$>$}{>} data in the OUT\+\_\+\+BUF is coming from the keyboard Else if kbc\+\_\+aux = 1 =\texorpdfstring{$>$}{>} data in the OUT\+\_\+\+BUF is coming from the mouse \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_a509b500a9d7161931e4f5a907cfe91c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_a509b500a9d7161931e4f5a907cfe91c0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{kbc_8h_a6b935373e0296367ab2c5d7c2efd3245}\index{kbc.h@{kbc.h}!kbc\_write\_command@{kbc\_write\_command}}
+\index{kbc\_write\_command@{kbc\_write\_command}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_write\_command()}{kbc\_write\_command()}}
+{\footnotesize\ttfamily \label{kbc_8h_a6b935373e0296367ab2c5d7c2efd3245} 
+int kbc\+\_\+write\+\_\+command (\begin{DoxyParamCaption}\item[{int}]{port}{, }\item[{uint8\+\_\+t}]{cmd}{}\end{DoxyParamCaption})}
+
+
+
+Envia um comando ao KBC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & porto do KBC \\
+\hline
+{\em cmd} & comando \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_a6b935373e0296367ab2c5d7c2efd3245_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h_a6b935373e0296367ab2c5d7c2efd3245_icgraph}
+\end{center}
+\end{figure}

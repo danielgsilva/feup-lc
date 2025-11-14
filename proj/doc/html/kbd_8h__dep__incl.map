@@ -1,0 +1,18 @@
+<map id="kbd.h" name="kbd.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="236,5,290,31"/>
+<area shape="rect" id="Node000002" href="$action_8h.html" title=" " alt="" coords="103,79,170,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,41,159,81,157,76,227,37"/>
+<area shape="rect" id="Node000006" href="$proj_8c.html" title=" " alt="" coords="192,226,246,252"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="260,46,224,227,219,226,255,45"/>
+<area shape="rect" id="Node000007" href="$kbd_8c.html" title=" " alt="" coords="300,79,354,105"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="286,40,318,77,314,80,282,44"/>
+<area shape="rect" id="Node000003" href="$action_8c.html" title=" " alt="" coords="5,153,73,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,116,57,154,54,150,106,112"/>
+<area shape="rect" id="Node000004" href="$claustro_8h.html" title=" " alt="" coords="97,153,176,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="130,120,132,152,127,152,125,120"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="161,114,189,151,208,191,218,225,213,226,203,193,185,154,157,118"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="142,137,141,105,146,105,148,137"/>
+<area shape="rect" id="Node000005" href="$claustro_8c.html" title=" " alt="" coords="91,226,169,252"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="136,194,133,226,128,226,131,194"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="164,187,207,224,203,228,160,191"/>
+</map>

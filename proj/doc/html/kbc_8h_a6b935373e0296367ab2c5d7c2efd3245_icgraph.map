@@ -1,0 +1,7 @@
+<map id="kbc_write_command" name="kbc_write_command">
+<area shape="rect" id="Node000001" title="Envia um comando ao KBC." alt="" coords="359,5,500,31"/>
+<area shape="rect" id="Node000002" href="$mouse_8c.html#af07f0fbfa918e227e2f54d8d626dbc62" title="Enables/disables stream mode data reporting, by sending the respective command to the mouse...." alt="" coords="162,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="343,21,311,21,311,16,343,16"/>
+<area shape="rect" id="Node000003" href="$proj_8c.html#af244d65e69677cf312af1950452ec256" title=" " alt="" coords="5,5,114,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,21,114,21,114,16,146,16"/>
+</map>

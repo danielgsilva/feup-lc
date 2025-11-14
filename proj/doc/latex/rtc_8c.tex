@@ -1,0 +1,183 @@
+\doxysection{rtc.\+c File Reference}
+\hypertarget{rtc_8c}{}\label{rtc_8c}\index{rtc.c@{rtc.c}}
+{\ttfamily \#include "{}rtc.\+h"{}}\newline
+Include dependency graph for rtc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{rtc_8c_a5171a9c0f54940fe60f7500896afcc86}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}bit\+\_\+no)
+\item 
+int \mbox{\hyperlink{rtc_8c_ab8f17bf5280c908c8b199a90fefcc758}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\item 
+int \mbox{\hyperlink{rtc_8c_a5cdc9b616ed381701ffbd367adbdf559}{rtc\+\_\+read}} (uint8\+\_\+t reg, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Read register reg of the RTC, writing the address of the register to the RTC\+\_\+\+ADDR\+\_\+\+REG and reading one byte from the RTC\+\_\+\+DATA\+\_\+\+REG. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rtc_8c_a05c07a1d1f46104a94f978a345daf64e}{rtc\+\_\+read\+\_\+time}} (uint8\+\_\+t reg, uint8\+\_\+t \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Lê o valor do registo reg (4, 2 ou 0) e converte de BCD para binário. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rtc_8c_a8ae29a4dd3292c10807a6dfca5e11e11}{rtc\+\_\+write}} (uint8\+\_\+t reg, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Write on the register reg the RTC, writing the address of the register to the RTC\+\_\+\+ADDR\+\_\+\+REG and writing one byte to the RTC\+\_\+\+DATA\+\_\+\+REG. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{rtc_8c_aeb3c7fbcf89e53d83750885ed7ac59a3}{rtc\+\_\+enable\+\_\+update\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Enable update interrupts (UI) using bit 4 (UIE) of REGISTER\+\_\+B. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056}{rtc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Lê a hora atual, lendo os registos das horas, minutos e segundos (registos 4, 2 e 0 respetivamente). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_r_t_c___time}{RTC\+\_\+\+Time}} \mbox{\hyperlink{rtc_8c_aa35c9900d20ebd3043e405ff9906286f}{rtc\+\_\+time}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rtc_8c_aeb3c7fbcf89e53d83750885ed7ac59a3}\index{rtc.c@{rtc.c}!rtc\_enable\_update\_int@{rtc\_enable\_update\_int}}
+\index{rtc\_enable\_update\_int@{rtc\_enable\_update\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_enable\_update\_int()}{rtc\_enable\_update\_int()}}
+{\footnotesize\ttfamily \label{rtc_8c_aeb3c7fbcf89e53d83750885ed7ac59a3} 
+int rtc\+\_\+enable\+\_\+update\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Enable update interrupts (UI) using bit 4 (UIE) of REGISTER\+\_\+B. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_aeb3c7fbcf89e53d83750885ed7ac59a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{rtc_8c_aeb3c7fbcf89e53d83750885ed7ac59a3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056}\index{rtc.c@{rtc.c}!rtc\_ih@{rtc\_ih}}
+\index{rtc\_ih@{rtc\_ih}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_ih()}{rtc\_ih()}}
+{\footnotesize\ttfamily \label{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056} 
+void rtc\+\_\+ih (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Lê a hora atual, lendo os registos das horas, minutos e segundos (registos 4, 2 e 0 respetivamente). 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a5cdc9b616ed381701ffbd367adbdf559}\index{rtc.c@{rtc.c}!rtc\_read@{rtc\_read}}
+\index{rtc\_read@{rtc\_read}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_read()}{rtc\_read()}}
+{\footnotesize\ttfamily \label{rtc_8c_a5cdc9b616ed381701ffbd367adbdf559} 
+int rtc\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Read register reg of the RTC, writing the address of the register to the RTC\+\_\+\+ADDR\+\_\+\+REG and reading one byte from the RTC\+\_\+\+DATA\+\_\+\+REG. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{rtc_8c_a5cdc9b616ed381701ffbd367adbdf559_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a5cdc9b616ed381701ffbd367adbdf559_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a05c07a1d1f46104a94f978a345daf64e}\index{rtc.c@{rtc.c}!rtc\_read\_time@{rtc\_read\_time}}
+\index{rtc\_read\_time@{rtc\_read\_time}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_read\_time()}{rtc\_read\_time()}}
+{\footnotesize\ttfamily \label{rtc_8c_a05c07a1d1f46104a94f978a345daf64e} 
+int rtc\+\_\+read\+\_\+time (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Lê o valor do registo reg (4, 2 ou 0) e converte de BCD para binário. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{rtc_8c_a05c07a1d1f46104a94f978a345daf64e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a05c07a1d1f46104a94f978a345daf64e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a5171a9c0f54940fe60f7500896afcc86}\index{rtc.c@{rtc.c}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily \label{rtc_8c_a5171a9c0f54940fe60f7500896afcc86} 
+int rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{bit\+\_\+no}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{rtc_8c_a5171a9c0f54940fe60f7500896afcc86_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_ab8f17bf5280c908c8b199a90fefcc758}\index{rtc.c@{rtc.c}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \label{rtc_8c_ab8f17bf5280c908c8b199a90fefcc758} 
+int rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{rtc_8c_ab8f17bf5280c908c8b199a90fefcc758_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rtc_8c_a8ae29a4dd3292c10807a6dfca5e11e11}\index{rtc.c@{rtc.c}!rtc\_write@{rtc\_write}}
+\index{rtc\_write@{rtc\_write}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_write()}{rtc\_write()}}
+{\footnotesize\ttfamily \label{rtc_8c_a8ae29a4dd3292c10807a6dfca5e11e11} 
+int rtc\+\_\+write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{reg}{, }\item[{uint8\+\_\+t}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Write on the register reg the RTC, writing the address of the register to the RTC\+\_\+\+ADDR\+\_\+\+REG and writing one byte to the RTC\+\_\+\+DATA\+\_\+\+REG. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a8ae29a4dd3292c10807a6dfca5e11e11_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rtc_8c_aa35c9900d20ebd3043e405ff9906286f}\index{rtc.c@{rtc.c}!rtc\_time@{rtc\_time}}
+\index{rtc\_time@{rtc\_time}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_time}{rtc\_time}}
+{\footnotesize\ttfamily \label{rtc_8c_aa35c9900d20ebd3043e405ff9906286f} 
+\mbox{\hyperlink{struct_r_t_c___time}{RTC\+\_\+\+Time}} rtc\+\_\+time}
+

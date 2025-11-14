@@ -1,0 +1,5 @@
+<map id="destroy_sprites" name="destroy_sprites">
+<area shape="rect" id="Node000001" title="Destroi todos os sprites." alt="" coords="5,5,116,31"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#af16c6befaac9ffb673b9e3c798d542ed" title=" " alt="" coords="164,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,16,148,16,148,21,116,21"/>
+</map>
